@@ -1,15 +1,40 @@
+*:root {
+    --schemes-primary: #006877;
+    --schemes-primary-container: #a4eeff;
+    --schemes-on-primary: #fff;
+    --schemes-secondary: #65558f;
+    --schemes-accent: #e8def8;
+    --schemes-text: #1d1b20;
+    --schemes-subheadline: #4a4458;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        --schemes-primary: #141218;
+        --schemes-secondary: #d0bcfe;
+        --schemes-accent: #4a4458;
+        --schemes-text: #e6e0e9;
+        --schemes-subheadline: #ccc2dc;
+    }
+}
+/*Material theme
+UIColor(red: 0, green: 0.41, blue: 0.47, alpha: 1)
+*/
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
-  color: #222;
+  color: var(--schemes-text);
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background: #4a90e2;
-  color: #fff;
+  background: var(--schemes-primary);
+  color: var(--schemes-on-primary);
   padding: 2rem 1rem;
+  display: flex;
+  flex-direction: row;
   text-align: center;
 }
 
