@@ -176,7 +176,7 @@ footer {
   padding-left: 29px;
   padding-right: 29px;
   background: var(--schemes-primary);
-  border-radius: 100px;
+  /*border-radius: 100px;*/
   outline: 1px var(--schemes-primary-container) solid;
   outline-offset: -1px;
   justify-content: center;
