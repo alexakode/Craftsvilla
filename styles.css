@@ -59,7 +59,80 @@
     --schemes-scrim: rgba(0, 0, 0, 0.5);
     --schemes-surface-container: #1b2122;
   }
+} /* ...existing code... */
+
+/* Briem Hand Thin */
+@font-face {
+  font-family: "Briem Hand";
+  src: url("fonts/webfonts/BriemHand-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
+
+/* Briem Hand ExtraLight */
+@font-face {
+  font-family: "Briem Hand";
+  src: url("fonts/webfonts/BriemHand-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Briem Hand Light */
+@font-face {
+  font-family: "Briem Hand";
+  src: url("fonts/webfonts/BriemHand-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Briem Hand Regular */
+@font-face {
+  font-family: "Briem Hand";
+  src: url("fonts/webfonts/BriemHand-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Briem Hand Medium */
+@font-face {
+  font-family: "Briem Hand";
+  src: url("fonts/webfonts/BriemHand-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Briem Hand SemiBold */
+@font-face {
+  font-family: "Briem Hand";
+  src: url("fonts/webfonts/BriemHand-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Briem Hand Bold */
+@font-face {
+  font-family: "Briem Hand";
+  src: url("fonts/webfonts/BriemHand-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Briem Hand Black */
+@font-face {
+  font-family: "Briem Hand";
+  src: url("fonts/webfonts/BriemHand-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*Material theme
 UIColor(red: 0, green: 0.41, blue: 0.47, alpha: 1)
 */
