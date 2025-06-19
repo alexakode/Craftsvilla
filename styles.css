@@ -122,7 +122,8 @@ footer {
 }
 .icon {
   padding: 8px;
-  background: var(--schemes-primary);
+  /*background: var(--schemes-primary);*/
+  color: var(--schemes-on-primary);
   overflow: hidden;
   border-radius: 50px;
   justify-content: flex-end;
@@ -132,7 +133,25 @@ footer {
 .icon-main {
   width: 128px;
   height: 144px;
-  background: var(--schemes-on-primary);
+  /*background: var(--schemes-on-primary);*/
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-main img.vector-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.icon-main img.edit-overlay {
+  position: absolute;
+  bottom: 6px;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+  pointer-events: none;
 }
 .icon-group {
   justify-content: flex-start;
@@ -145,8 +164,8 @@ footer {
   border-radius: 90px;
   outline: 14px var(--schemes-on-primary) solid;
   outline-offset: -7px;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: bottom;
   gap: 10px;
   display: flex;
 }
