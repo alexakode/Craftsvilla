@@ -1,20 +1,64 @@
 *:root {
-    --schemes-primary: #006877;
-    --schemes-primary-container: #a4eeff;
-    --schemes-on-primary: #fff;
-    --schemes-secondary: #65558f;
-    --schemes-accent: #e8def8;
-    --schemes-text: #1d1b20;
-    --schemes-subheadline: #4a4458;
+  --schemes-primary: #006877;
+  --schemes-surface-tint: #006877;
+  --schemes-on-primary: #fff;
+  --schemes-primary-container: #a4eeff;
+  --schemes-on-primary-container: #004e5a;
+  --schemes-secondary: #4b6268;
+  --schemes-on-secondary: #fff;
+  --schemes-secondary-container: #cde7ee;
+  --schemes-on-secondary-container: #334a50;
+  --schemes-tertiary: #555d7e;
+  --schemes-on-tertiary: #fff;
+  --schemes-tertiary-container: #dce1ff;
+  --schemes-on-tertiary-container: #3d4565;
+  --schemes-error: #ba1a1a;
+  --schemes-on-error: #fff;
+  --schemes-error-container: #ffdad6;
+  --schemes-on-error-container: #93000a;
+  --schemes-background: #f5fafc;
+  --schemes-on-background: #171c1d;
+  --schemes-surface: #f5fafc;
+  --schemes-on-surface: #171c1d;
+  --schemes-surface-variant: #dbe4e7;
+  --schemes-on-surface-variant: #3f484b;
+  --schemes-outline: #6f797b;
+  --schemes-outline-variant: #bfc8cb;
+  --schemes-shadow: #000000;
+  --schemes-scrim: rgba(0, 0, 0, 0.5);
+  --schemes-surface-container: #e9eff0;
 }
 @media (prefers-color-scheme: dark) {
-    body {
-        --schemes-primary: #141218;
-        --schemes-secondary: #d0bcfe;
-        --schemes-accent: #4a4458;
-        --schemes-text: #e6e0e9;
-        --schemes-subheadline: #ccc2dc;
-    }
+  :root {
+    --schemes-primary: #83d2e4;
+    --schemes-surface-tint: #83d2e4;
+    --schemes-on-primary: #00363f;
+    --schemes-primary-container: #004e5a;
+    --schemes-on-primary-container: #a4eeff;
+    --schemes-secondary: #b2cbd1;
+    --schemes-on-secondary: #1c3439;
+    --schemes-secondary-container: #334a50;
+    --schemes-on-secondary-container: #cde7ee;
+    --schemes-tertiary: #bdc5eb;
+    --schemes-on-tertiary: #262f4d;
+    --schemes-tertiary-container: #3d4565;
+    --schemes-on-tertiary-container: #dce1ff;
+    --schemes-error: #ffb4ab;
+    --schemes-on-error: #690005;
+    --schemes-error-container: #93000a;
+    --schemes-on-error-container: #ffdad6;
+    --schemes-background: #0e1416;
+    --schemes-on-background: #dee3e5;
+    --schemes-surface: #0e1416;
+    --schemes-on-surface: #dee3e5;
+    --schemes-surface-variant: #3f484b;
+    --schemes-on-surface-variant: #bfc8cb;
+    --schemes-outline: #899295;
+    --schemes-outline-variant: #3f484b;
+    --schemes-shadow: #000000;
+    --schemes-scrim: rgba(0, 0, 0, 0.5);
+    --schemes-surface-container: #1b2122;
+  }
 }
 /*Material theme
 UIColor(red: 0, green: 0.41, blue: 0.47, alpha: 1)
@@ -23,8 +67,8 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: var(--schemes-text);
+  background: var(--schemes-background);
+  color: var(--schemes-on-background);
   display: flex;
   flex-direction: column;
 }
@@ -45,8 +89,8 @@ main {
 }
 
 footer {
-  background: #222;
-  color: #fff;
+  background: var(--schemes-secondary);
+  color: var(--schemes-on-secondary);
   text-align: center;
   padding: 1rem;
   position: fixed;
