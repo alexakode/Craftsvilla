@@ -175,16 +175,12 @@ footer {
 }
 .logo-box {
   width: fit-content;
-  /*max-width: fit-content;*/
-  /* height: fit-content;*/
-  /*max-height: fit-content;*/
   padding: 2.5rem;
   background: var(--schemes-primary);
   border-radius: 5rem;
   outline: 1px var(--schemes-primary-container) solid;
   outline-offset: -1px;
-  justify-content: center;
-  /*align-items: flex-end;*/
+  align-items: center;
   display: inline-flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -194,10 +190,24 @@ footer {
   display: flex;
   flex-direction: column;
   color: var(--schemes-on-primary);
-  font-size: 128px;
+  font-size: clamp(3rem, 8vw, 7rem);
   font-family: "Briem Hand", cursive;
   font-weight: 400;
   word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  .logo-text {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+}
+.logo-subtext {
+  font-size: 2rem;
+  font-family: "Briem Hand", cursive;
+  font-weight: 100;
+  color: var(--schemes-on-primary);
+  text-align: center;
+  margin-top: -1rem;
 }
 .icon {
   padding: 1.4rem;
@@ -244,11 +254,11 @@ img.edit-overlay {
   pointer-events: none;
 }
 .icon-group {
+  height: 100%;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   /*gap: 10px;*/
-  display: flex;
-  width: fit-content;
 }
 .icon-circle {
   padding: 1rem;
