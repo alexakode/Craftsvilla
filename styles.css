@@ -275,3 +275,46 @@ img.edit-overlay {
   height: 48px;*/
   background: var(--schemes-on-primary);
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 1rem;
+  max-width: 360px;
+  background: var(--schemes-primary-container);
+  color: var(--schemes-on-primary-container);
+  border-radius: .75rem;
+  border-color: var(--schemes-primary);
+  border-style: solid;
+  border-width: 1px;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem;
+  padding: 1rem;
+}
+.primary-button {
+  background: var(--schemes-primary);
+  color: var(--schemes-on-primary);
+  padding: 1rem;
+  border-radius: 6.25rem;
+  width: fit-content;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.secondary-button {
+  background: var(--schemes-secondary);
+  color: var(--schemes-on-secondary);
+  padding: 1rem;
+  border-radius: 6.25rem;
+  width: fit-content;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
