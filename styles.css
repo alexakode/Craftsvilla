@@ -144,6 +144,7 @@ body {
   color: var(--schemes-on-background);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 header {
@@ -151,13 +152,15 @@ header {
   color: var(--schemes-on-primary);
   padding: 2rem 1rem;
   display: flex;
+  justify-content: center;
+  align-self: center;
   flex-direction: row;
   text-align: center;
 }
 
 main {
   padding: 2rem 1rem;
-  max-width: 800px;
+  /*max-width: 800px;*/
   margin: 0 auto;
 }
 
@@ -171,17 +174,20 @@ footer {
   bottom: 0;
 }
 .logo-box {
-  width: 100%;
-  height: 100%;
-  padding-left: 29px;
-  padding-right: 29px;
+  width: fit-content;
+  /*max-width: fit-content;*/
+  /* height: fit-content;*/
+  /*max-height: fit-content;*/
+  padding: 2.5rem;
   background: var(--schemes-primary);
-  /*border-radius: 100px;*/
+  border-radius: 5rem;
   outline: 1px var(--schemes-primary-container) solid;
   outline-offset: -1px;
   justify-content: center;
-  align-items: flex-end;
+  /*align-items: flex-end;*/
   display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .logo-text {
   justify-content: center;
@@ -194,19 +200,22 @@ footer {
   word-wrap: break-word;
 }
 .icon {
-  padding: 8px;
+  padding: 1.4rem;
   /*background: var(--schemes-primary);*/
   color: var(--schemes-on-primary);
   overflow: hidden;
-  border-radius: 50px;
+  /*border-radius: 50px;*/
+  height: fit-content;
+  width: fit-content;
   justify-content: flex-end;
   align-items: flex-end;
   display: flex;
 }
 .icon-main {
-  width: 128px;
-  height: 144px;
+  /*width: 128px;
+  height: 144px;*/
   /*background: var(--schemes-on-primary);*/
+  height: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -220,21 +229,30 @@ footer {
 }
 .icon-main img.edit-overlay {
   position: absolute;
-  bottom: 6px;
-  right: -10px;
-  width: 60px;
-  height: 60px;
+  bottom: -1rem;
+  right: -1.5rem;
+  /*width: 60px;*/
+  /*height: 60px;*/
+  pointer-events: none;
+}
+img.edit-overlay {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  bottom: -1rem;
+  right: -1.5rem;
   pointer-events: none;
 }
 .icon-group {
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  /*gap: 10px;*/
   display: flex;
+  width: fit-content;
 }
 .icon-circle {
-  padding: 15px;
-  border-radius: 90px;
+  padding: 1rem;
+  border-radius: 0.7rem;
   outline: 14px var(--schemes-on-primary) solid;
   outline-offset: -7px;
   justify-content: flex-end;
@@ -243,7 +261,7 @@ footer {
   display: flex;
 }
 .icon-dot {
-  width: 48px;
-  height: 48px;
+  /*width: 48px;
+  height: 48px;*/
   background: var(--schemes-on-primary);
 }
