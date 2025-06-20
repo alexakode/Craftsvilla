@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tilbakemelding – Craftsvilla</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="logo-box">
+      <div class="logo-text">Crafts&shy;villa</div>
+      <div class="icon-group">
+        <div class="icon-main">
+          <img
+            src="assets/Vector.svg"
+            alt="Craftsvilla logo vector"
+            class="vector-logo"
+          />
+          <img src="assets/edit.svg" alt="Edit overlay" class="edit-overlay" />
+        </div>
+      </div>
+      <div class="logo-subtext">
+        <p>Kreativitet, samhold, avslapning, alle aldre</p>
+      </div>
+    </header>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="booking.html">Bestill</a></li>
+        <li><a href="feedback.html" aria-current="page">Tilbakemelding</a></li>
+        <!-- Flere menypunkter kan legges til her -->
+      </ul>
+    </nav>
+    <main>
+      <section class="hero">
+        <h1>Gi oss din tilbakemelding</h1>
+        <p>
+          Vi setter stor pris på dine erfaringer og forslag! Fyll ut skjemaet
+          under for å hjelpe oss å bli bedre.
+        </p>
+        <form class="feedback-form">
+          <label for="name">Navn (valgfritt):</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="email">E-post (valgfritt):</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="experience">Hvordan var din opplevelse?</label>
+          <select id="experience" name="experience" required>
+            <option value="">Velg et alternativ</option>
+            <option value="excellent">Utmerket</option>
+            <option value="good">God</option>
+            <option value="ok">OK</option>
+            <option value="bad">Dårlig</option>
+          </select>
+
+          <label for="message">Din tilbakemelding:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <label>
+            <input type="checkbox" name="consent" required />
+            Jeg godtar at min tilbakemelding kan brukes anonymt på nettsiden.
+          </label>
+
+          <button class="primary-button" type="submit">
+            Send tilbakemelding
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <small>&copy; 2025 Alexander Jansen</small>
+    </footer>
+    <script>
+      document
+        .querySelector(".feedback-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Takk for din tilbakemelding!");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
