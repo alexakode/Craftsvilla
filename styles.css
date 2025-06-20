@@ -476,7 +476,8 @@ img {
   object-fit: contain;
   display: block;
 }
-.booking-form {
+.booking-form,
+.feedback-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
