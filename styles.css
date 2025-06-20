@@ -275,6 +275,17 @@ footer {
   width: 100%;
   bottom: 0;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: masonry;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100svw;
+  max-height: 100svh;
+  /*max-width: 800px;*/
+  margin: 0 auto;
+}
 .logo-box {
   width: fit-content;
   padding: 2.5rem;
@@ -382,24 +393,28 @@ img.edit-overlay {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   max-width: 100svw;
   max-height: 100svh;
   /*max-width: 800px;*/
   margin: 0 auto;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  flex-grow: 1;
   align-items: first baseline;
   gap: 1rem;
-  justify-content: center;
+  justify-content: start;
   width: fit-content;
+  height: fit-content;
+  max-width: 40rem;
   padding: 1rem;
-  /*max-width: 360px;*/
   background: var(--schemes-surface);
   color: var(--schemes-on-surface);
   border-radius: 0.75rem;
@@ -440,9 +455,9 @@ img.edit-overlay {
   border-radius: 0.5rem;
 }
 img {
-  max-width: 100svw;
+  max-width: 100%;
   height: auto;
-  max-height: 100svh;
+  max-height: 100%;
   object-fit: contain;
   display: block;
 }
