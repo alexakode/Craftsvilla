@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bestill – Craftsvilla</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="logo-box">
+      <div class="logo-text">Crafts&shy;villa</div>
+      <div class="icon-group">
+        <div class="icon-main">
+          <img
+            src="assets/Vector.svg"
+            alt="Craftsvilla logo vector"
+            class="vector-logo"
+          />
+          <img src="assets/edit.svg" alt="Edit overlay" class="edit-overlay" />
+        </div>
+      </div>
+      <div class="logo-subtext">
+        <p>Kreativitet, samhold, avslapning, alle aldre</p>
+      </div>
+    </header>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="booking.html" aria-current="page">Bestill</a></li>
+        <!-- Flere menypunkter kan legges til her -->
+      </ul>
+    </nav>
+    <main>
+      <section class="hero">
+        <h1>Bestill ditt kreative sett</h1>
+        <p>
+          Fyll ut skjemaet under for å bestille et av våre kreative sett. Vi tar
+          kontakt med deg for bekreftelse og levering.
+        </p>
+        <form class="booking-form">
+          <label for="name">Navn:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-post:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" required />
+          <label for="workshop">Velg workshop:</label>
+          <select id="workshop" name="workshop" required>
+            <option value="">Velg en workshop</option>
+            <option value="akvarell">Akvarellmaling</option>
+            <option value="mosaikk">Mosaikkunst</option>
+            <option value="lerret">Lerretsmaling</option>
+          </select>
+          <label for="date">Dato for workshop:</label>
+          <input type="date" id="date" name="date" required />
+          <label for="quantity">Antall deltagere:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            value="1"
+            required
+          />
+
+          <label for="message">Spesielle ønsker (valgfritt):</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+
+          <button class="primary-button" type="submit">Send bestilling</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <small>&copy; 2025 Alexander Jansen</small>
+    </footer>
+    <script>
+      document
+        .querySelector(".booking-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Takk for din bestilling! Vi tar kontakt snart.");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
