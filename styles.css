@@ -1,4 +1,5 @@
 *:root {
+  /* Scheme for whole page, currently lerret as an example, equivalent to Material Theme in figma. */
   --schemes-primary: #006877;
   --schemes-surface-tint: #006877;
   --schemes-on-primary: #fff;
@@ -28,8 +29,109 @@
   --schemes-scrim: rgba(0, 0, 0, 0.5);
   --schemes-surface-container: #e9eff0;
 }
+.akvarell {
+  --schemes-on-surface-variant: #49454f;
+  --schemes-on-surface: #1d1b20;
+  --schemes-outline-variant: #cac4d0;
+  --schemes-on-primary: #fff;
+  --schemes-on-primary-container: #4f378b;
+  --schemes-primary: #65558f;
+  --schemes-primary-container: #eaddff;
+  --schemes-surface: #fef7ff;
+}
+.mosaikk {
+  --schemes-on-surface-variant: #4a473a;
+  --schemes-on-surface: #1d1c13;
+  --schemes-outline-variant: #cbc6b5;
+  --schemes-on-primary: #fff;
+  --schemes-on-primary-container: #4f4800;
+  --schemes-primary: #685f12;
+  --schemes-primary-container: #f1e48a;
+  --schemes-surface: #fff9eb;
+}
+.lerret {
+  --schemes-primary: #006877;
+  --schemes-surface-tint: #006877;
+  --schemes-on-primary: #fff;
+  --schemes-primary-container: #a4eeff;
+  --schemes-on-primary-container: #004e5a;
+  --schemes-secondary: #4b6268;
+  --schemes-on-secondary: #fff;
+  --schemes-secondary-container: #cde7ee;
+  --schemes-on-secondary-container: #334a50;
+  --schemes-tertiary: #555d7e;
+  --schemes-on-tertiary: #fff;
+  --schemes-tertiary-container: #dce1ff;
+  --schemes-on-tertiary-container: #3d4565;
+  --schemes-error: #ba1a1a;
+  --schemes-on-error: #fff;
+  --schemes-error-container: #ffdad6;
+  --schemes-on-error-container: #93000a;
+  --schemes-background: #f5fafc;
+  --schemes-on-background: #171c1d;
+  --schemes-surface: #f5fafc;
+  --schemes-on-surface: #171c1d;
+  --schemes-surface-variant: #dbe4e7;
+  --schemes-on-surface-variant: #3f484b;
+  --schemes-outline: #6f797b;
+  --schemes-outline-variant: #bfc8cb;
+  --schemes-shadow: #000000;
+  --schemes-scrim: rgba(0, 0, 0, 0.5);
+  --schemes-surface-container: #e9eff0;
+}
+/* Dark mode color scheme. I only get one media query, so everything should go inside that */
 @media (prefers-color-scheme: dark) {
   :root {
+    --schemes-primary: #83d2e4;
+    --schemes-surface-tint: #83d2e4;
+    --schemes-on-primary: #00363f;
+    --schemes-primary-container: #004e5a;
+    --schemes-on-primary-container: #a4eeff;
+    --schemes-secondary: #b2cbd1;
+    --schemes-on-secondary: #1c3439;
+    --schemes-secondary-container: #334a50;
+    --schemes-on-secondary-container: #cde7ee;
+    --schemes-tertiary: #bdc5eb;
+    --schemes-on-tertiary: #262f4d;
+    --schemes-tertiary-container: #3d4565;
+    --schemes-on-tertiary-container: #dce1ff;
+    --schemes-error: #ffb4ab;
+    --schemes-on-error: #690005;
+    --schemes-error-container: #93000a;
+    --schemes-on-error-container: #ffdad6;
+    --schemes-background: #0e1416;
+    --schemes-on-background: #dee3e5;
+    --schemes-surface: #0e1416;
+    --schemes-on-surface: #dee3e5;
+    --schemes-surface-variant: #3f484b;
+    --schemes-on-surface-variant: #bfc8cb;
+    --schemes-outline: #899295;
+    --schemes-outline-variant: #3f484b;
+    --schemes-shadow: #000000;
+    --schemes-scrim: rgba(0, 0, 0, 0.5);
+    --schemes-surface-container: #1b2122;
+  }
+  .akvarell {
+    --schemes-on-surface-variant: #cac4d0;
+    --schemes-on-surface: #e6e0e9;
+    --schemes-on-primary: #381e72;
+    --schemes-outline-variant: #49454f;
+    --schemes-primary-container: #4f378b;
+    --schemes-on-primary-container: #eaddff;
+    --schemes-primary: #d0bcfe;
+    --schemes-surface: #141218;
+  }
+  .mosaikk {
+    --schemes-on-surface-variant: #cbc6b5;
+    --schemes-on-surface: #e7e2d5;
+    --schemes-on-primary: #363100;
+    --schemes-outline-variant: #4a473a;
+    --schemes-surface: #15130c;
+    --schemes-primary-container: #4f4800;
+    --schemes-primary: #d4c871;
+    --schemes-on-primary-container: #f1e48a;
+  }
+  .lerret {
     --schemes-primary: #83d2e4;
     --schemes-surface-tint: #83d2e4;
     --schemes-on-primary: #00363f;
@@ -180,7 +282,7 @@ footer {
   border-radius: 5rem;
   outline: 1px var(--schemes-primary-container) solid;
   outline-offset: -1px;
-  align-items: center;
+  align-items: stretch;
   display: inline-flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -275,15 +377,32 @@ img.edit-overlay {
   height: 48px;*/
   background: var(--schemes-on-primary);
 }
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100svw;
+  max-height: 100svh;
+  /*max-width: 800px;*/
+  margin: 0 auto;
+}
+
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: first baseline;
+  gap: 1rem;
+  justify-content: center;
   width: fit-content;
   padding: 1rem;
-  max-width: 360px;
-  background: var(--schemes-primary-container);
-  color: var(--schemes-on-primary-container);
-  border-radius: .75rem;
+  /*max-width: 360px;*/
+  background: var(--schemes-surface);
+  color: var(--schemes-on-surface);
+  border-radius: 0.75rem;
   border-color: var(--schemes-primary);
   border-style: solid;
   border-width: 1px;
@@ -296,7 +415,8 @@ img.edit-overlay {
   gap: 1rem;
   padding: 1rem;
 }
-.primary-button, .secondary-button {
+.primary-button,
+.secondary-button {
   padding: 1rem;
   border-radius: 6.25rem;
   width: fit-content;
@@ -308,14 +428,21 @@ img.edit-overlay {
 .primary-button {
   background: var(--schemes-primary);
   color: var(--schemes-on-primary);
-  
 }
 .secondary-button {
-  background: var(--schemes-secondary);
-  color: var(--schemes-on-secondary);
+  background: var(--schemes-surface);
+  color: var(--schemes-on-surface-variant);
 }
-.primary-button:active, .secondary-button:active {
+.primary-button:active,
+.secondary-button:active {
   filter: none;
   box-shadow: none;
-  border-radius: .5rem;;
+  border-radius: 0.5rem;
+}
+img {
+  max-width: 100svw;
+  height: auto;
+  max-height: 100svh;
+  object-fit: contain;
+  display: block;
 }

@@ -24,36 +24,66 @@
       </div>
     </header>
     <main>
-      <p>
-        Welcome to Craftsvilla! Start building your site based on your Figma
-        draft.
-      </p>
-      <div class="card">
-        <h1>Akvarellmaling</h1>
-        <h2>200&thinsp;kr</h2>
-        <img
-          src="img/akvarell.jpg"
-          alt="Akvarellmaling sett"
-          class="card-image"
-        />
-        <p>Sett inkluderer</p>
-        <ul>
-          <li>Ramme</li>
-          <li>Akvarellpapir med designmal</li>
-          <li>Akvarellfarger</li>
-          <li>Pensler</li>
-        </ul>
-        <div class="button-container">
-          <button class="secondary-button">Legg til i handlevogn</button>
-          <button class="primary-button">✓ Kjøp nå</button>
+      <div class="card-container">
+        <div class="card akvarell">
+          <h1>Akvarellmaling</h1>
+          <h2>200&thinsp;kr</h2>
+          <img
+            src="img/akvarell.jpg"
+            alt="Akvarellsett"
+            class="card-image"
+          />
+          <p>Sett inkluderer</p>
+          <ul>
+            <li>Ramme</li>
+            <li>Akvarellpapir med designmal</li>
+            <li>Akvarellfarger</li>
+            <li>Pensler</li>
+          </ul>
+          <div class="button-container">
+            <button class="secondary-button">Legg til i handlevogn</button>
+            <button class="primary-button">✓ Kjøp nå</button>
+          </div>
         </div>
-        <script>
-          document
-            .querySelector(".primary-button")
-            .addEventListener("click", function () {
-              alert("Takk for din bestilling!");
-            });
-        </script>
+        <div class="card mosaikk">
+          <h1>Mosaikkunst</h1>
+          <h2>400&thinsp;kr</h2>
+          <img src="img/mosaikk.jpg" alt="Mosaikksett" class="card-image" />
+          <p>Sett inkluderer</p>
+          <ul>
+            <li>Ramme</li>
+            <li>A4-størrelse treplate</li>
+            <li>Små fargede steiner</li>
+            <li>Gummi</li>
+          </ul>
+          <div class="button-container">
+            <button class="secondary-button">Legg til i handlevogn</button>
+            <button class="primary-button">✓ Kjøp nå</button>
+          </div>
+          <script>
+            document
+              .querySelector(".primary-button")
+              .addEventListener("click", function () {
+                alert("Takk for din bestilling!");
+              });
+          </script>
+        </div>
+        <div class="card lerret">
+          <h1>Lerretsmaling</h1>
+          <h2>300&thinsp;kr</h2>
+          <img src="img/lerret.jpg" alt="Lerretssett" class="card-image" />
+          <p>Sett inkluderer</p>
+          <ul>
+            <li>Ramme</li>
+            <li>Lerret med designmal</li>
+            <li>Maling</li>
+            <li>Pensler</li>
+          </ul>
+          <div class="button-container">
+            <button class="secondary-button">Legg til i handlevogn</button>
+            <button class="primary-button">✓ Kjøp nå</button>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
