@@ -296,25 +296,26 @@ img.edit-overlay {
   gap: 1rem;
   padding: 1rem;
 }
-.primary-button {
-  background: var(--schemes-primary);
-  color: var(--schemes-on-primary);
+.primary-button, .secondary-button {
   padding: 1rem;
   border-radius: 6.25rem;
   width: fit-content;
   text-align: center;
   font-weight: bold;
   text-decoration: none;
-  transition: background 0.3s ease;
+  /*transition: background 0.3s ease;*/
+}
+.primary-button {
+  background: var(--schemes-primary);
+  color: var(--schemes-on-primary);
+  
 }
 .secondary-button {
   background: var(--schemes-secondary);
   color: var(--schemes-on-secondary);
-  padding: 1rem;
-  border-radius: 6.25rem;
-  width: fit-content;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s ease;
+}
+.primary-button:active, .secondary-button:active {
+  filter: none;
+  box-shadow: none;
+  border-radius: .5rem;;
 }
