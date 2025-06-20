@@ -249,9 +249,29 @@ header {
   justify-content: center;
   align-self: center;
   flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
 }
-
+nav.main-menu {
+  padding: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--schemes-secondary);
+  color: var(--schemes-on-secondary);
+}
+nav.main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+nav.main-menu ul li a {
+  color: var(--schemes-on-secondary);
+}
 main {
   padding: 2rem 1rem;
   /*max-width: 800px;*/
@@ -472,6 +492,35 @@ img {
 .feedback-form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--schemes-surface);
+  color: var(--schemes-on-surface);
+  border-radius: 0.75rem;
+  border-color: var(--schemes-primary);
+  border-style: solid;
+  border-width: 1px;
+}
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100svw;
+  max-height: 100svh;
+  /*max-width: 800px;*/
+  margin: 0 auto;
+  gap: 1rem;
+}
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
   gap: 1rem;
   padding: 1rem;
   background: var(--schemes-surface);
