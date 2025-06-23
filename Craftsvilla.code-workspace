@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../Planet-Project"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Craftsvilla"
+  }
+}
