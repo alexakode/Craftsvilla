@@ -267,6 +267,9 @@ main {
   display: flex;
   flex-direction: column;
 }
+nav {
+  border-radius: 0.75rem;
+}
 nav.main-menu {
   padding: 1rem;
   /*margin-left: 2rem;*/
@@ -336,7 +339,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: masonry;
-  gap: 1rem;
+  gap: auto;
   width: 100%;
   /*max-width: 100svw;*/
   /*max-height: 100svh;*/
@@ -449,11 +452,11 @@ img.edit-overlay {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-start;
-  width: 100%;
+  max-width: 100%;
   /*max-width: 100svw;*/
-  max-height: 100svh;
+  /*max-height: 100svh;*/
   /*max-width: 800px;*/
   margin: 0 auto;
   gap: 1rem;
@@ -464,12 +467,12 @@ img.edit-overlay {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   align-items: first baseline;
   gap: 1rem;
   justify-content: start;
   width: fit-content;
-  height: fit-content;
+  /*height: fit-content;*/
   max-width: 40rem;
   padding: 1rem;
   background: var(--schemes-surface);
