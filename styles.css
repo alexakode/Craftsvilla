@@ -498,6 +498,7 @@ img.edit-overlay {
   text-align: center;
   font-weight: bold;
   text-decoration: none;
+  height: fit-content;
   /*transition: background 0.3s ease;*/
 }
 .primary-button {
