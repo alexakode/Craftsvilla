@@ -512,6 +512,10 @@ img.edit-overlay {
   color: var(--schemes-on-primary);
 }
 .secondary-button {
+  background: var(--schemes-secondary);
+  color: var(--schemes-on-secondary);
+}
+.secondary-button {
   background: var(--schemes-surface);
   color: var(--schemes-on-surface-variant);
 }
@@ -520,6 +524,10 @@ img.edit-overlay {
   filter: none;
   box-shadow: none;
   border-radius: 0.5rem;
+}
+.primary-button:hover,
+.secondary-button:hover {
+  opacity: 0.8;
 }
 img {
   max-width: 100%;
