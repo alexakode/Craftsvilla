@@ -327,8 +327,8 @@ section.about {
   margin: 0 auto;
 }
 footer {
-  background: var(--schemes-secondary);
-  color: var(--schemes-on-secondary);
+  background: var(--schemes-tertiary);
+  color: var(--schemes-on-tertiary);
   text-align: center;
   padding: 1rem;
   /*position: fixed;*/
@@ -353,13 +353,14 @@ footer {
   border-radius: 5rem;
   outline: 1px var(--schemes-primary-container) solid;
   outline-offset: -1px;
-  align-items: stretch;
+  align-items: center;
   display: inline-flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 .logo-text {
   justify-content: center;
+  align-items: baseline;
   display: flex;
   flex-direction: column;
   color: var(--schemes-on-primary);
@@ -375,12 +376,17 @@ footer {
   }
 }
 .logo-subtext {
+  align-items: baseline;
   font-size: 2rem;
   font-family: "Briem Hand", cursive;
   font-weight: 100;
-  color: var(--schemes-on-primary);
+  background-color: var(--schemes-primary-container);
+  color: var(--schemes-on-primary-container);
+  height: fit-content;
   text-align: center;
-  margin-top: -1rem;
+  border-radius: 2.5rem;
+  /*margin-top: -1rem;*/
+  padding: 0.5rem 1rem;
 }
 .icon {
   padding: 1.4rem;
