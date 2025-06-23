@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 *:root {
   /* Scheme for whole page, currently lerret as an example, equivalent to Material Theme in figma. */
   --schemes-primary: #006877;
@@ -273,7 +281,7 @@ nav.main-menu ul li a {
   color: var(--schemes-on-secondary);
 }
 main {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 4rem 1rem;
   /*max-width: 800px;*/
   margin: 0 auto;
 }
@@ -288,7 +296,6 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 100svw;
   max-height: 100svh;
   /*max-width: 800px;*/
   margin: 0 auto;
@@ -308,7 +315,7 @@ footer {
   grid-template-rows: masonry;
   gap: 1rem;
   width: 100%;
-  max-width: 100svw;
+  /*max-width: 100svw;*/
   max-height: 100svh;
   /*max-width: 800px;*/
   margin: 0 auto;
@@ -422,7 +429,7 @@ img.edit-overlay {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  max-width: 100svw;
+  /*max-width: 100svw;*/
   max-height: 100svh;
   /*max-width: 800px;*/
   margin: 0 auto;
@@ -508,10 +515,11 @@ img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 100svw;
-  max-height: 100svh;
+  /*max-width: 100svw;*/
+  /*max-height: 100svh;*/
   /*max-width: 800px;*/
   margin: 0 auto;
+  margin-top: 2rem;
   gap: 1rem;
 }
 .testimonial {
