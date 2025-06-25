@@ -13,13 +13,37 @@ html {
 */
 :root {
   color-scheme: light dark;
-  /* Default (Material) color scheme using static hex values from light.css and dark.css */
+  /* Default (Material) color scheme using static hex values from light.css and dark.css I'm using the OKColor extension in Figma to convert to oklch. Might have to round or adjust values as I identify patterns.*/
   --schemes-primary: light-dark(#006877, #83d2e4);
+  --schemes-primary: light-dark(
+    oklch(47.5% 0.082679 211.9),
+    oklch(81.9% 0.081536 213.8)
+  );
   --schemes-on-primary: light-dark(#ffffff, #00363f);
+  --schemes-on-primary: light-dark(
+    oklch(100% 0 0),
+    oklch(30.6% 0.053382 212.5)
+  );
+  --schemes-primary-container: light-dark(
+    oklch(90.6% 0.076473 213.6),
+    oklch(38.9% 0.067831 212.3)
+  );
   --schemes-primary-container: light-dark(#a4eeff, #004e5a);
   --schemes-on-primary-container: light-dark(#004e5a, #a4eeff);
+  --schemes-on-primary-container: light-dark(
+    oklch(38.9% 0.067831 212.3),
+    oklch(90.6% 0.076473 213.6)
+  );
   --schemes-secondary: light-dark(#4b6268, #b2cbd1);
+  --schemes-secondary: light-dark(
+    oklch(48% 0.029189 215.5),
+    oklch(82.5% 0.028265 213.8)
+  );
   --schemes-on-secondary: light-dark(#ffffff, #1c3439);
+  --schemes-on-secondary: light-dark(
+    oklch(100% 0 0),
+    oklch(30.8% 0.031228 212.4)
+  );
   --schemes-secondary-container: light-dark(#cee6ee, #071e25);
   --schemes-on-secondary-container: light-dark(#071e25, #334a50);
   --schemes-tertiary: light-dark(#555d7e, #bdc5eb);
