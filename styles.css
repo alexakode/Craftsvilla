@@ -7,6 +7,7 @@ html {
   box-sizing: inherit;
 }
 :root {
+  color-scheme: light dark;
   /* Color scheme using light-dark() for all variables */
   --schemes-primary: light-dark(#006877, #83d2e4);
   --schemes-surface-tint: light-dark(#006877, #83d2e4);
