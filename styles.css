@@ -6,162 +6,36 @@ html {
 *::after {
   box-sizing: inherit;
 }
-*:root {
-  /* Scheme for whole page, currently lerret as an example, equivalent to Material Theme in figma. */
-  --schemes-primary: #006877;
-  --schemes-surface-tint: #006877;
-  --schemes-on-primary: #fff;
-  --schemes-primary-container: #a4eeff;
-  --schemes-on-primary-container: #004e5a;
-  --schemes-secondary: #4b6268;
-  --schemes-on-secondary: #fff;
-  --schemes-secondary-container: #cde7ee;
-  --schemes-on-secondary-container: #334a50;
-  --schemes-tertiary: #555d7e;
-  --schemes-on-tertiary: #fff;
-  --schemes-tertiary-container: #dce1ff;
-  --schemes-on-tertiary-container: #3d4565;
-  --schemes-error: #ba1a1a;
-  --schemes-on-error: #fff;
-  --schemes-error-container: #ffdad6;
-  --schemes-on-error-container: #93000a;
-  --schemes-background: #f5fafc;
-  --schemes-surface: #f5fafc; /* Match background */
-  --schemes-on-background: #171c1d;
-  --schemes-surface-variant: #dbe4e7;
-  --schemes-on-surface-variant: #3f484b;
-  --schemes-outline: #6f797b;
-  --schemes-outline-variant: #bfc8cb;
+:root {
+  /* Color scheme using light-dark() for all variables */
+  --schemes-primary: light-dark(#006877, #83d2e4);
+  --schemes-surface-tint: light-dark(#006877, #83d2e4);
+  --schemes-on-primary: light-dark(#fff, #00363f);
+  --schemes-primary-container: light-dark(#a4eeff, #004e5a);
+  --schemes-on-primary-container: light-dark(#004e5a, #a4eeff);
+  --schemes-secondary: light-dark(#4b6268, #b2cbd1);
+  --schemes-on-secondary: light-dark(#fff, #1c3439);
+  --schemes-secondary-container: light-dark(#cde7ee, #334a50);
+  --schemes-on-secondary-container: light-dark(#334a50, #cde7ee);
+  --schemes-tertiary: light-dark(#555d7e, #bdc5eb);
+  --schemes-on-tertiary: light-dark(#fff, #262f4d);
+  --schemes-tertiary-container: light-dark(#dce1ff, #3d4565);
+  --schemes-on-tertiary-container: light-dark(#3d4565, #dce1ff);
+  --schemes-error: light-dark(#ba1a1a, #ffb4ab);
+  --schemes-on-error: light-dark(#fff, #690005);
+  --schemes-error-container: light-dark(#ffdad6, #93000a);
+  --schemes-on-error-container: light-dark(#93000a, #ffdad6);
+  --schemes-background: light-dark(#f5fafc, #0e1416);
+  --schemes-surface: light-dark(#f5fafc, #0e1416);
+  --schemes-on-background: light-dark(#171c1d, #dee3e5);
+  --schemes-surface-variant: light-dark(#dbe4e7, #3f484b);
+  --schemes-on-surface-variant: light-dark(#3f484b, #bfc8cb);
+  --schemes-outline: light-dark(#6f797b, #899295);
+  --schemes-outline-variant: light-dark(#bfc8cb, #3f484b);
   --schemes-shadow: #000000;
   --schemes-scrim: rgba(0, 0, 0, 0.5);
-  --schemes-surface-container: #e9eff0;
+  --schemes-surface-container: light-dark(#e9eff0, #1b2122);
 }
-.akvarell {
-  --schemes-on-surface-variant: #49454f;
-  --schemes-on-surface: #1d1b20;
-  --schemes-outline-variant: #cac4d0;
-  --schemes-on-primary: #fff;
-  --schemes-on-primary-container: #4f378b;
-  --schemes-primary: #65558f;
-  --schemes-primary-container: #eaddff;
-  --schemes-surface: #fef7ff;
-  --schemes-background: #fef7ff; /* Match background */
-}
-.mosaikk {
-  --schemes-on-surface-variant: #4a473a;
-  --schemes-on-surface: #1d1c13;
-  --schemes-outline-variant: #cbc6b5;
-  --schemes-on-primary: #fff;
-  --schemes-on-primary-container: #4f4800;
-  --schemes-primary: #685f12;
-  --schemes-primary-container: #f1e48a;
-  --schemes-surface: #fff9eb;
-  --schemes-background: #fff9eb; /* Match background */
-}
-.lerret {
-  --schemes-primary: #006877;
-  --schemes-surface-tint: #006877;
-  --schemes-on-primary: #fff;
-  --schemes-primary-container: #a4eeff;
-  --schemes-on-primary-container: #004e5a;
-  --schemes-secondary: #4b6268;
-  --schemes-on-secondary: #fff;
-  --schemes-secondary-container: #cde7ee;
-  --schemes-on-secondary-container: #334a50;
-  --schemes-tertiary: #555d7e;
-  --schemes-on-tertiary: #fff;
-  --schemes-tertiary-container: #dce1ff;
-  --schemes-on-tertiary-container: #3d4565;
-  --schemes-error: #ba1a1a;
-  --schemes-on-error: #fff;
-  --schemes-error-container: #ffdad6;
-  --schemes-on-error-container: #93000a;
-  --schemes-background: #f5fafc;
-  --schemes-surface: #f5fafc; /* Match background */
-}
-/* Dark mode color scheme. I only get one media query, so everything should go inside that */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --schemes-primary: #83d2e4;
-    --schemes-surface-tint: #83d2e4;
-    --schemes-on-primary: #00363f;
-    --schemes-primary-container: #004e5a;
-    --schemes-on-primary-container: #a4eeff;
-    --schemes-secondary: #b2cbd1;
-    --schemes-on-secondary: #1c3439;
-    --schemes-secondary-container: #334a50;
-    --schemes-on-secondary-container: #cde7ee;
-    --schemes-tertiary: #bdc5eb;
-    --schemes-on-tertiary: #262f4d;
-    --schemes-tertiary-container: #3d4565;
-    --schemes-on-tertiary-container: #dce1ff;
-    --schemes-error: #ffb4ab;
-    --schemes-on-error: #690005;
-    --schemes-error-container: #93000a;
-    --schemes-on-error-container: #ffdad6;
-    --schemes-background: #0e1416;
-    --schemes-surface: #0e1416; /* Match background */
-    --schemes-on-background: #dee3e5;
-    --schemes-surface-variant: #3f484b;
-    --schemes-on-surface-variant: #bfc8cb;
-    --schemes-outline: #899295;
-    --schemes-outline-variant: #3f484b;
-    --schemes-shadow: #000000;
-    --schemes-scrim: rgba(0, 0, 0, 0.5);
-    --schemes-surface-container: #1b2122;
-  }
-  .akvarell {
-    --schemes-on-surface-variant: #cac4d0;
-    --schemes-on-surface: #e6e0e9;
-    --schemes-on-primary: #381e72;
-    --schemes-outline-variant: #49454f;
-    --schemes-primary-container: #4f378b;
-    --schemes-on-primary-container: #eaddff;
-    --schemes-primary: #d0bcfe;
-    --schemes-surface: #141218;
-    --schemes-background: #141218; /* Match background */
-  }
-  .mosaikk {
-    --schemes-on-surface-variant: #cbc6b5;
-    --schemes-on-surface: #e7e2d5;
-    --schemes-on-primary: #363100;
-    --schemes-outline-variant: #4a473a;
-    --schemes-surface: #15130c;
-    --schemes-primary-container: #4f4800;
-    --schemes-primary: #d4c871;
-    --schemes-on-primary-container: #f1e48a;
-    --schemes-background: #15130c; /* Match background */
-  }
-  .lerret {
-    --schemes-primary: #83d2e4;
-    --schemes-surface-tint: #83d2e4;
-    --schemes-on-primary: #00363f;
-    --schemes-primary-container: #004e5a;
-    --schemes-on-primary-container: #a4eeff;
-    --schemes-secondary: #b2cbd1;
-    --schemes-on-secondary: #1c3439;
-    --schemes-secondary-container: #334a50;
-    --schemes-on-secondary-container: #cde7ee;
-    --schemes-tertiary: #bdc5eb;
-    --schemes-on-tertiary: #262f4d;
-    --schemes-tertiary-container: #3d4565;
-    --schemes-on-tertiary-container: #dce1ff;
-    --schemes-error: #ffb4ab;
-    --schemes-on-error: #690005;
-    --schemes-error-container: #93000a;
-    --schemes-on-error-container: #ffdad6;
-    --schemes-background: #0e1416;
-    --schemes-surface: #0e1416; /* Match background */
-    --schemes-on-background: #dee3e5;
-    --schemes-surface-variant: #3f484b;
-    --schemes-on-surface-variant: #bfc8cb;
-    --schemes-outline: #899295;
-    --schemes-outline-variant: #3f484b;
-    --schemes-shadow: #000000;
-    --schemes-scrim: rgba(0, 0, 0, 0.5);
-    --schemes-surface-container: #1b2122;
-  }
-} /* ...existing code... */
 
 /* Briem Hand Thin */
 @font-face {
@@ -578,4 +452,48 @@ img {
   border-color: var(--schemes-primary);
   border-style: solid;
   border-width: 1px;
+}
+
+.akvarell {
+  --schemes-on-surface-variant: light-dark(#49454f, #cac4d0);
+  --schemes-on-surface: light-dark(#1d1b20, #e6e0e9);
+  --schemes-outline-variant: light-dark(#cac4d0, #49454f);
+  --schemes-on-primary: light-dark(#fff, #381e72);
+  --schemes-on-primary-container: light-dark(#4f378b, #eaddff);
+  --schemes-primary: light-dark(#65558f, #d0bcfe);
+  --schemes-primary-container: light-dark(#eaddff, #4f378b);
+  --schemes-surface: light-dark(#fef7ff, #141218);
+  --schemes-background: light-dark(#fef7ff, #141218);
+}
+.mosaikk {
+  --schemes-on-surface-variant: light-dark(#4a473a, #cbc6b5);
+  --schemes-on-surface: light-dark(#1d1c13, #e7e2d5);
+  --schemes-outline-variant: light-dark(#cbc6b5, #4a473a);
+  --schemes-on-primary: light-dark(#fff, #363100);
+  --schemes-on-primary-container: light-dark(#4f4800, #f1e48a);
+  --schemes-primary: light-dark(#685f12, #d4c871);
+  --schemes-primary-container: light-dark(#f1e48a, #4f4800);
+  --schemes-surface: light-dark(#fff9eb, #15130c);
+  --schemes-background: light-dark(#fff9eb, #15130c);
+}
+.lerret {
+  --schemes-primary: light-dark(#006877, #83d2e4);
+  --schemes-surface-tint: light-dark(#006877, #83d2e4);
+  --schemes-on-primary: light-dark(#fff, #00363f);
+  --schemes-primary-container: light-dark(#a4eeff, #004e5a);
+  --schemes-on-primary-container: light-dark(#004e5a, #a4eeff);
+  --schemes-secondary: light-dark(#4b6268, #b2cbd1);
+  --schemes-on-secondary: light-dark(#fff, #1c3439);
+  --schemes-secondary-container: light-dark(#cde7ee, #334a50);
+  --schemes-on-secondary-container: light-dark(#334a50, #cde7ee);
+  --schemes-tertiary: light-dark(#555d7e, #bdc5eb);
+  --schemes-on-tertiary: light-dark(#fff, #262f4d);
+  --schemes-tertiary-container: light-dark(#dce1ff, #3d4565);
+  --schemes-on-tertiary-container: light-dark(#3d4565, #dce1ff);
+  --schemes-error: light-dark(#ba1a1a, #ffb4ab);
+  --schemes-on-error: light-dark(#fff, #690005);
+  --schemes-error-container: light-dark(#ffdad6, #93000a);
+  --schemes-on-error-container: light-dark(#93000a, #ffdad6);
+  --schemes-background: light-dark(#f5fafc, #0e1416);
+  --schemes-surface: light-dark(#f5fafc, #0e1416);
 }
