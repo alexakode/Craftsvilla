@@ -44,7 +44,11 @@ html {
     oklch(100% 0 0),
     oklch(30.8% 0.031228 212.4)
   );
-  --schemes-secondary-container: light-dark(#cee6ee, #071e25);
+  --schemes-secondary-container: light-dark(#cde7ee, #334a50);
+  --schemes-secondary-container: light-dark(
+    oklch(91.1% 0.029084 215.7),
+    oklch(39.3% 0.030075 215.7)
+  );
   --schemes-on-secondary-container: light-dark(#071e25, #334a50);
   --schemes-tertiary: light-dark(#555d7e, #bdc5eb);
   --schemes-on-tertiary: light-dark(#ffffff, #262f4d);
