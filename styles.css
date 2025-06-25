@@ -13,28 +13,27 @@ html {
 */
 :root {
   color-scheme: light dark;
-  /* Default (Material) color scheme using light-dark() */
+  /* Default (Material) color scheme using static hex values from light.css and dark.css */
   --schemes-primary: light-dark(#006877, #83d2e4);
-  --schemes-surface-tint: light-dark(#006877, #83d2e4);
-  --schemes-on-primary: light-dark(#fff, #00363f);
+  --schemes-on-primary: light-dark(#ffffff, #00363f);
   --schemes-primary-container: light-dark(#a4eeff, #004e5a);
   --schemes-on-primary-container: light-dark(#004e5a, #a4eeff);
   --schemes-secondary: light-dark(#4b6268, #b2cbd1);
-  --schemes-on-secondary: light-dark(#fff, #1c3439);
-  --schemes-secondary-container: light-dark(#cde7ee, #334a50);
-  --schemes-on-secondary-container: light-dark(#334a50, #cde7ee);
+  --schemes-on-secondary: light-dark(#ffffff, #1c3439);
+  --schemes-secondary-container: light-dark(#cee6ee, #071e25);
+  --schemes-on-secondary-container: light-dark(#071e25, #334a50);
   --schemes-tertiary: light-dark(#555d7e, #bdc5eb);
-  --schemes-on-tertiary: light-dark(#fff, #262f4d);
-  --schemes-tertiary-container: light-dark(#dce1ff, #3d4565);
+  --schemes-on-tertiary: light-dark(#ffffff, #262f4d);
+  --schemes-tertiary-container: light-dark(#dbe1ff, #3d4565);
   --schemes-on-tertiary-container: light-dark(#3d4565, #dce1ff);
   --schemes-error: light-dark(#ba1a1a, #ffb4ab);
-  --schemes-on-error: light-dark(#fff, #690005);
-  --schemes-error-container: light-dark(#ffdad6, #93000a);
-  --schemes-on-error-container: light-dark(#93000a, #ffdad6);
+  --schemes-on-error: light-dark(#ffffff, #690005);
+  --schemes-error-container: light-dark(#ffdad6, #410002);
+  --schemes-on-error-container: light-dark(#93000a, #ffdada);
   --schemes-background: light-dark(#f5fafc, #0e1416);
   --schemes-surface: light-dark(#f5fafc, #0e1416);
-  --schemes-on-background: light-dark(#171c1d, #dee3e5);
-  --schemes-on-surface: light-dark(#171c1d, #dee3e5);
+  --schemes-on-background: light-dark(#171d1e, #dee3e5);
+  --schemes-on-surface: light-dark(#171d1e, #dee3e5);
   --schemes-surface-variant: light-dark(#dbe4e7, #3f484b);
   --schemes-on-surface-variant: light-dark(#3f484b, #bfc8cb);
   --schemes-outline: light-dark(#6f797b, #899295);
@@ -42,6 +41,7 @@ html {
   --schemes-shadow: #000000;
   --schemes-scrim: rgba(0, 0, 0, 0.5);
   --schemes-surface-container: light-dark(#e9eff0, #1b2122);
+  --schemes-surface-tint: #003c46;
 }
 
 @media (prefers-contrast: more) {
@@ -79,8 +79,63 @@ html {
 }
 @media (prefers-contrast: less) {
   :root {
-    /* Medium/Reduced Contrast color scheme using light-dark() */
-    --schemes-primary: light-dark(#4b8fa1, #b3e0ec);
+    /* Medium/Reduced Contrast color scheme using light-dark(). Use materiial-theme-akvarell css files */
+    --schemes-primary: light-dark(#006e6d, #4fd8eb);
+    --schemes-surface-tint: light-dark(#006e6d, #4fd8eb);
+    --schemes-on-primary: light-dark(#ffffff, #00363b);
+    --schemes-primary-container: light-dark(#6ff7f6, #005156);
+    --schemes-on-primary-container: light-dark(#002020, #6ff7f6);
+    --schemes-secondary: light-dark(#4a6363, #b0cccc);
+    --schemes-on-secondary: light-dark(#ffffff, #1b3535);
+    --schemes-secondary-container: light-dark(#cce8e7, #324b4b);
+    --schemes-on-secondary-container: light-dark(#072020, #cce8e7);
+    --schemes-tertiary: light-dark(#4a636d, #b1cad6);
+    --schemes-on-tertiary: light-dark(#ffffff, #1c333b);
+    --schemes-tertiary-container: light-dark(#cde6f3, #334954);
+    --schemes-on-tertiary-container: light-dark(#071e26, #cde6f3);
+    --schemes-error: light-dark(#ba1a1a, #ffb4ab);
+    --schemes-on-error: light-dark(#ffffff, #690005);
+    --schemes-error-container: light-dark(#ffdad6, #93000a);
+    --schemes-on-error-container: light-dark(#410002, #ffdad6);
+    --schemes-background: light-dark(#fafdfa, #191c1d);
+    --schemes-on-background: light-dark(#191c1d, #e0e3e3);
+    --schemes-surface: light-dark(#fafdfa, #191c1d);
+    --schemes-on-surface: light-dark(#191c1d, #e0e3e3);
+    --schemes-surface-variant: light-dark(#dae5e3, #3f4948);
+    --schemes-on-surface-variant: light-dark(#3f4948, #bfc9c7);
+    --schemes-outline: light-dark(#6f7978, #899392);
+    --schemes-outline-variant: light-dark(#bfc9c7, #3f4948);
+    --schemes-shadow: light-dark(#000000, #000000);
+    --schemes-scrim: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    --schemes-surface-container: light-dark(#e0e3e3, #232728);
+    --schemes-primary: light-dark(#006e6d, #4fd8eb);
+    --schemes-surface-tint: light-dark(#006e6d, #4fd8eb);
+    --schemes-on-primary: light-dark(#ffffff, #00363b);
+    --schemes-primary-container: light-dark(#6ff7f6, #005156);
+    --schemes-on-primary-container: light-dark(#002020, #6ff7f6);
+    --schemes-secondary: light-dark(#4a6363, #b0cccc);
+    --schemes-on-secondary: light-dark(#ffffff, #1b3535);
+    --schemes-secondary-container: light-dark(#cce8e7, #324b4b);
+    --schemes-on-secondary-container: light-dark(#072020, #cce8e7);
+    --schemes-tertiary: light-dark(#4a636d, #b1cad6);
+    --schemes-on-tertiary: light-dark(#ffffff, #1c333b);
+    --schemes-tertiary-container: light-dark(#cde6f3, #334954);
+    --schemes-on-tertiary-container: light-dark(#071e26, #cde6f3);
+    --schemes-error: light-dark(#ba1a1a, #ffb4ab);
+    --schemes-on-error: light-dark(#ffffff, #690005);
+    --schemes-error-container: light-dark(#ffdad6, #93000a);
+    --schemes-on-error-container: light-dark(#410002, #ffdad6);
+    --schemes-background: light-dark(#fafdfa, #191c1d);
+    --schemes-on-background: light-dark(#191c1d, #e0e3e3);
+    --schemes-surface: light-dark(#fafdfa, #191c1d);
+    --schemes-on-surface: light-dark(#191c1d, #e0e3e3);
+    --schemes-surface-variant: light-dark(#dae5e3, #3f4948);
+    --schemes-on-surface-variant: light-dark(#3f4948, #bfc9c7);
+    --schemes-outline: light-dark(#6f7978, #899392);
+    --schemes-outline-variant: light-dark(#bfc9c7, #3f4948);
+    --schemes-shadow: light-dark(#000000, #000000);
+    --schemes-scrim: light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    --schemes-surface-container: light-dark(#e0e3e3, #232728);
     --schemes-surface-tint: light-dark(#4b8fa1, #b3e0ec);
     --schemes-on-primary: light-dark(#f5f5f5, #222c2f);
     --schemes-primary-container: light-dark(#e0f7fa, #2a4a52);
