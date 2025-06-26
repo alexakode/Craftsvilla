@@ -56,19 +56,6 @@ html {
   --c-17: 0.17;
   --c-19: 0.19;
 
-  /* Example: use these for primary and surface colors */
-  --schemes-primary: light-dark(
-    oklch(var(--l-48) var(--c-08) 213),
-    oklch(var(--l-82) var(--c-08) 213)
-  );
-  --schemes-surface: light-dark(
-    oklch(var(--l-98) var(--c-01) 213),
-    oklch(var(--l-18) var(--c-01) 213)
-  );
-  --schemes-on-primary: light-dark(
-    oklch(var(--l-100) var(--c-00) 0),
-    oklch(var(--l-32) var(--c-05) 213)
-  );
   /* ...repeat for other color roles using the scale... */
   color-scheme: light dark;
   /* Base color values (hex and oklch) */
