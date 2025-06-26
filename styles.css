@@ -95,10 +95,10 @@ html {
     oklch(var(--l-48) var(--c-03) 213),
     oklch(var(--l-82) var(--c-03) 213)
   );
-  --schemes-on-secondary: light-dark(var(--color-white), #1c3439);
+  /*--schemes-on-secondary: light-dark(var(--color-white), #1c3439);*/
   --schemes-on-secondary: light-dark(
     var(--color-white-oklch),
-    oklch(var(--l-30) var(--c-03) 213)
+    oklch(var(--l-32) var(--c-03) 213)
   );
   --schemes-secondary-container: light-dark(#cde7ee, #334a50);
   --schemes-secondary-container: light-dark(
