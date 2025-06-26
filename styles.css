@@ -8,7 +8,7 @@ html {
 }
 /*
   =============================
-  COLOR SCHEME DECLARATIONS (Optimized with Aliases)
+  COLOR SCHEME DECLARATIONS (Optimized with Aliases, Consistent Hue 213)
   =============================
 */
 :root {
@@ -20,103 +20,121 @@ html {
   --color-black-oklch: oklch(0% 0 0);
   --color-surface-light: #f5fafc;
   --color-surface-dark: #0e1416;
-  --color-surface-light-oklch: oklch(98.5% 0.01 223.5);
-  --color-surface-dark-oklch: oklch(18.6% 0.01 220);
+  --color-surface-light-oklch: oklch(98.5% 0.01 213);
+  --color-surface-dark-oklch: oklch(18.6% 0.01 213);
   /* ...add more base colors as needed... */
 
-  /* Default (Material) color scheme using static hex values and oklch */
+  /* Default (Material) color scheme using static hex values and oklch, all hue 213 */
   --schemes-primary: light-dark(#006877, #83d2e4);
   --schemes-primary: light-dark(oklch(47.5% 0.08 213), oklch(82% 0.08 213));
   --schemes-on-primary: light-dark(var(--color-white), #00363f);
-  --schemes-on-primary: light-dark(var(--color-white-oklch), oklch(30.6% 0.053 212.5));
+  --schemes-on-primary: light-dark(
+    var(--color-white-oklch),
+    oklch(30.6% 0.053 213)
+  );
   --schemes-primary-container: light-dark(#a4eeff, #004e5a);
   --schemes-primary-container: light-dark(
-    oklch(90.6% 0.076 213.6),
-    oklch(38.9% 0.068 212.3)
+    oklch(90.6% 0.076 213),
+    oklch(38.9% 0.068 213)
   );
   --schemes-on-primary-container: light-dark(#004e5a, #a4eeff);
   --schemes-on-primary-container: light-dark(
-    oklch(38.9% 0.068 212.3),
-    oklch(90.6% 0.076 213.6)
+    oklch(38.9% 0.068 213),
+    oklch(90.6% 0.076 213)
   );
   --schemes-secondary: light-dark(#4b6268, #b2cbd1);
-  --schemes-secondary: light-dark(
-    oklch(48% 0.029 215.5),
-    oklch(82.5% 0.028 213.8)
-  );
+  --schemes-secondary: light-dark(oklch(48% 0.029 213), oklch(82.5% 0.028 213));
   --schemes-on-secondary: light-dark(var(--color-white), #1c3439);
-  --schemes-on-secondary: light-dark(var(--color-white-oklch), oklch(30.8% 0.031 212.4));
+  --schemes-on-secondary: light-dark(
+    var(--color-white-oklch),
+    oklch(30.8% 0.031 213)
+  );
   --schemes-secondary-container: light-dark(#cde7ee, #334a50);
   --schemes-secondary-container: light-dark(
-    oklch(91.1% 0.029 215.7),
-    oklch(39.3% 0.03 215.7)
+    oklch(91.1% 0.029 213),
+    oklch(39.3% 0.03 213)
   );
   --schemes-on-secondary-container: light-dark(#334a50, #cde7ee);
   --schemes-on-secondary-container: light-dark(
-    oklch(39.3% 0.03 215.7),
-    oklch(91.1% 0.029 215.7)
+    oklch(39.3% 0.03 213),
+    oklch(91.1% 0.029 213)
   );
   --schemes-tertiary: light-dark(#555d7e, #bdc5eb);
-  --schemes-tertiary: light-dark(
-    oklch(48.5% 0.054 273.7),
-    oklch(83% 0.054 275.8)
-  );
+  --schemes-tertiary: light-dark(oklch(48.5% 0.054 213), oklch(83% 0.054 213));
   --schemes-on-tertiary: light-dark(var(--color-white), #262f4d);
-  --schemes-on-tertiary: light-dark(var(--color-white-oklch), oklch(31.2% 0.055 270.3));
+  --schemes-on-tertiary: light-dark(
+    var(--color-white-oklch),
+    oklch(31.2% 0.055 213)
+  );
   --schemes-tertiary-container: light-dark(#dbe1ff, #3d4565);
   --schemes-tertiary-container: light-dark(
-    oklch(91.5% 0.041 278.1),
-    oklch(39.8% 0.056 272.9)
+    oklch(91.5% 0.041 213),
+    oklch(39.8% 0.056 213)
   );
   --schemes-on-tertiary-container: light-dark(#3d4565, #dce1ff);
   --schemes-on-tertiary-container: light-dark(
-    oklch(39.8% 0.056 272.9),
-    oklch(91.5% 0.041 278.1)
+    oklch(39.8% 0.056 213),
+    oklch(91.5% 0.041 213)
   );
   --schemes-error: light-dark(#ba1a1a, #ffb4ab);
-  --schemes-error: light-dark(oklch(50.6% 0.192 27.7), oklch(83.8% 0.089 26.8));
+  --schemes-error: light-dark(oklch(50.6% 0.192 27.7), oklch(83.8% 0.089 27.7));
   --schemes-on-error: light-dark(var(--color-white), #690005);
-  --schemes-on-error: light-dark(var(--color-white-oklch), oklch(32.8% 0.134 27.3));
+  --schemes-on-error: light-dark(
+    var(--color-white-oklch),
+    oklch(32.8% 0.134 27.7)
+  );
   --schemes-error-container: light-dark(#ffdad6, #93000a);
   --schemes-error-container: light-dark(
-    oklch(91.8% 0.042 25.2),
-    oklch(41.7% 0.17 27.4)
+    oklch(91.8% 0.042 27.7),
+    oklch(41.7% 0.17 27.7)
   );
   --schemes-on-error-container: light-dark(#93000a, #ffdada);
   --schemes-on-error-container: light-dark(
-    oklch(41.7% 0.17 27.4),
-    oklch(91.8% 0.042 25.2)
+    oklch(41.7% 0.17 27.7),
+    oklch(91.8% 0.042 27.7)
   );
-  --schemes-background: light-dark(var(--color-surface-light), var(--color-surface-dark));
-  --schemes-background: light-dark(var(--color-surface-light-oklch), var(--color-surface-dark-oklch));
+  --schemes-background: light-dark(
+    var(--color-surface-light),
+    var(--color-surface-dark)
+  );
+  --schemes-background: light-dark(
+    var(--color-surface-light-oklch),
+    var(--color-surface-dark-oklch)
+  );
   --schemes-on-background: light-dark(#171d1e, #dee3e5);
   --schemes-on-background: light-dark(
-    oklch(22.5% 0.01 208.8),
-    oklch(91.3% 0.01 223.5)
+    oklch(22.5% 0.01 213),
+    oklch(91.3% 0.01 213)
   );
-  --schemes-surface: light-dark(var(--color-surface-light), var(--color-surface-dark));
-  --schemes-surface: light-dark(var(--color-surface-light-oklch), var(--color-surface-dark-oklch));
+  --schemes-surface: light-dark(
+    var(--color-surface-light),
+    var(--color-surface-dark)
+  );
+  --schemes-surface: light-dark(
+    var(--color-surface-light-oklch),
+    var(--color-surface-dark-oklch)
+  );
   --schemes-on-surface: light-dark(#171d1e, #dee3e5);
   --schemes-on-surface: light-dark(
-    oklch(22.5% 0.01 208.8),
-    oklch(91.3% 0.01 223.5)
+    oklch(22.5% 0.01 213),
+    oklch(91.3% 0.01 213)
   );
   --schemes-surface-variant: light-dark(#dbe4e7, #3f484b);
   --schemes-surface-variant: light-dark(
-    oklch(91.3% 0.01 220),
-    oklch(39.5% 0.01 220)
+    oklch(91.3% 0.01 213),
+    oklch(39.5% 0.01 213)
   );
   --schemes-on-surface-variant: light-dark(#3f484b, #bfc8cb);
   --schemes-on-surface-variant: light-dark(
-    oklch(39.5% 0.01 220),
-    oklch(82.7% 0.01 220)
+    oklch(39.5% 0.01 213),
+    oklch(82.7% 0.01 213)
   );
   --schemes-outline: light-dark(#6f797b, #899295);
-  --schemes-outline: light-dark(oklch(56.8% 0.01 211), oklch(65.4% 0.01 220));
+  --schemes-outline: light-dark(oklch(56.8% 0.01 213), oklch(65.4% 0.01 213));
   --schemes-outline-variant: light-dark(#bfc8cb, #3f484b);
   --schemes-outline-variant: light-dark(
-    oklch(82.7% 0.01 220),
-    oklch(39.5% 0.01 220)
+    oklch(82.7% 0.01 213),
+    oklch(39.5% 0.01 213)
   );
   --schemes-shadow: var(--color-black);
   --schemes-shadow: var(--color-black-oklch);
@@ -124,11 +142,95 @@ html {
   --schemes-scrim: var(--color-black-oklch);
   --schemes-surface-container: light-dark(#e9eff0, #1b2122);
   --schemes-surface-container: light-dark(
-    oklch(95% 0.01 210),
-    oklch(24% 0.01 210)
+    oklch(95% 0.01 213),
+    oklch(24% 0.01 213)
   );
   --schemes-surface-tint: #003c46;
-  --schemes-surface-tint: oklch(25% 0.08 210);
+  --schemes-surface-tint: oklch(25% 0.08 213);
+}
+
+/* Lerret Theme (identical to :root, for future flexibility) */
+.lerret {
+  --schemes-primary: light-dark(#006877, #83d2e4);
+  --schemes-primary: light-dark(oklch(47.5% 0.08 213), oklch(82% 0.08 213));
+  --schemes-surface-tint: light-dark(#006877, #83d2e4);
+  --schemes-surface-tint: light-dark(
+    oklch(47.5% 0.08 213),
+    oklch(82% 0.08 213)
+  );
+  --schemes-on-primary: light-dark(var(--color-white), #00363f);
+  --schemes-on-primary: light-dark(
+    var(--color-white-oklch),
+    oklch(30.6% 0.053 213)
+  );
+  --schemes-primary-container: light-dark(#a4eeff, #004e5a);
+  --schemes-primary-container: light-dark(
+    oklch(90.6% 0.076 213),
+    oklch(38.9% 0.068 213)
+  );
+  --schemes-on-primary-container: light-dark(#004e5a, #a4eeff);
+  --schemes-on-primary-container: light-dark(
+    oklch(38.9% 0.068 213),
+    oklch(90.6% 0.076 213)
+  );
+  --schemes-secondary: light-dark(#4b6268, #b2cbd1);
+  --schemes-secondary: light-dark(oklch(48% 0.029 213), oklch(82.5% 0.028 213));
+  --schemes-on-secondary: light-dark(var(--color-white), #1c3439);
+  --schemes-on-secondary: light-dark(
+    var(--color-white-oklch),
+    oklch(30.8% 0.031 213)
+  );
+  --schemes-secondary-container: light-dark(#cde7ee, #334a50);
+  --schemes-secondary-container: light-dark(
+    oklch(91.1% 0.029 213),
+    oklch(39.3% 0.03 213)
+  );
+  --schemes-on-secondary-container: light-dark(#334a50, #cde7ee);
+  --schemes-on-secondary-container: light-dark(
+    oklch(39.3% 0.03 213),
+    oklch(91.1% 0.029 213)
+  );
+  --schemes-tertiary: light-dark(#555d7e, #bdc5eb);
+  --schemes-tertiary: light-dark(oklch(48.5% 0.054 213), oklch(83% 0.054 213));
+  --schemes-on-tertiary: light-dark(var(--color-white), #262f4d);
+  --schemes-on-tertiary: light-dark(
+    var(--color-white-oklch),
+    oklch(31.2% 0.055 213)
+  );
+  --schemes-tertiary-container: light-dark(#dbe1ff, #3d4565);
+  --schemes-tertiary-container: light-dark(
+    oklch(91.5% 0.041 213),
+    oklch(39.8% 0.056 213)
+  );
+  --schemes-on-tertiary-container: light-dark(#3d4565, #dce1ff);
+  --schemes-on-tertiary-container: light-dark(
+    oklch(39.8% 0.056 213),
+    oklch(91.5% 0.041 213)
+  );
+  /* Removed error color overrides; now inherited from :root for DRYness and consistency */
+  --schemes-background: light-dark(
+    var(--color-surface-light),
+    var(--color-surface-dark)
+  );
+  --schemes-background: light-dark(
+    oklch(98.5% 0.01 213),
+    oklch(18.6% 0.01 213)
+  );
+  --schemes-surface: light-dark(
+    var(--color-surface-light),
+    var(--color-surface-dark)
+  );
+  --schemes-surface: light-dark(oklch(98.2% 0.01 213), oklch(18.6% 0.01 213));
+  --schemes-on-background: light-dark(#171d1e, #dee3e5);
+  --schemes-on-background: light-dark(
+    oklch(22.5% 0.01 213),
+    oklch(91.3% 0.01 213)
+  );
+  --schemes-on-surface: light-dark(#171d1e, #dee3e5);
+  --schemes-on-surface: light-dark(
+    oklch(22.5% 0.01 213),
+    oklch(91.3% 0.01 213)
+  );
 }
 
 @media (prefers-contrast: more) {
@@ -142,50 +244,64 @@ html {
       oklch(80% 0.08 210)
     );
     --schemes-on-primary: light-dark(var(--color-white), var(--color-black));
-    --schemes-on-primary: light-dark(var(--color-white-oklch), var(--color-black-oklch));
+    --schemes-on-primary: light-dark(
+      var(--color-white-oklch),
+      var(--color-black-oklch)
+    );
     --schemes-primary-container: light-dark(#00515d, #7fcee0);
     --schemes-primary-container: light-dark(
       oklch(15% 0.08 210),
       oklch(85% 0.08 210)
     );
     --schemes-on-primary-container: light-dark(var(--color-white), #000d11);
-    --schemes-on-primary-container: light-dark(var(--color-white-oklch), oklch(5% 0 210));
+    --schemes-on-primary-container: light-dark(
+      var(--color-white-oklch),
+      oklch(5% 0 210)
+    );
     --schemes-secondary: light-dark(#183035, #dbf5fb);
     --schemes-secondary: light-dark(oklch(10% 0.03 210), oklch(98% 0.03 210));
     --schemes-on-secondary: light-dark(var(--color-white), var(--color-black));
-    --schemes-on-secondary: light-dark(var(--color-white-oklch), var(--color-black-oklch));
+    --schemes-on-secondary: light-dark(
+      var(--color-white-oklch),
+      var(--color-black-oklch)
+    );
     --schemes-secondary-container: light-dark(#354d52, #aec7cd);
     --schemes-secondary-container: light-dark(
       oklch(20% 0.03 210),
       oklch(90% 0.03 210)
     );
     --schemes-on-secondary-container: light-dark(var(--color-white), #000d11);
-    --schemes-on-secondary-container: light-dark(var(--color-white-oklch), oklch(5% 0 210));
+    --schemes-on-secondary-container: light-dark(
+      var(--color-white-oklch),
+      oklch(5% 0 210)
+    );
     --schemes-tertiary: light-dark(#222b48, #eeefff);
     --schemes-tertiary: light-dark(oklch(15% 0.06 270), oklch(99% 0.06 270));
     --schemes-on-tertiary: light-dark(var(--color-white), var(--color-black));
-    --schemes-on-tertiary: light-dark(var(--color-white-oklch), var(--color-black-oklch));
+    --schemes-on-tertiary: light-dark(
+      var(--color-white-oklch),
+      var(--color-black-oklch)
+    );
     --schemes-tertiary-container: light-dark(#3f4867, #b9c1e7);
     --schemes-tertiary-container: light-dark(
       oklch(25% 0.06 270),
       oklch(90% 0.06 270)
     );
     --schemes-on-tertiary-container: light-dark(var(--color-white), #010926);
-    --schemes-on-tertiary-container: light-dark(var(--color-white-oklch), oklch(5% 0 270));
-    --schemes-error: light-dark(#600004, #ffece9);
-    --schemes-error: light-dark(oklch(20% 0.18 29), oklch(99% 0.18 29));
-    --schemes-on-error: light-dark(var(--color-white), var(--color-black));
-    --schemes-on-error: light-dark(var(--color-white-oklch), var(--color-black-oklch));
-    --schemes-error-container: light-dark(#98000a, #ffaea4);
-    --schemes-error-container: light-dark(
-      oklch(30% 0.18 29),
-      oklch(90% 0.18 29)
+    --schemes-on-tertiary-container: light-dark(
+      var(--color-white-oklch),
+      oklch(5% 0 270)
     );
-    --schemes-on-error-container: light-dark(var(--color-white), #220001);
-    --schemes-on-error-container: light-dark(var(--color-white-oklch), oklch(10% 0 29));
-    --schemes-background: light-dark(var(--color-surface-light), var(--color-surface-dark));
+    /* Removed error color overrides; now inherited from :root for DRYness and consistency */
+    --schemes-background: light-dark(
+      var(--color-surface-light),
+      var(--color-surface-dark)
+    );
     --schemes-background: light-dark(oklch(98% 0.01 210), oklch(10% 0.01 210));
-    --schemes-surface: light-dark(var(--color-surface-light), var(--color-surface-dark));
+    --schemes-surface: light-dark(
+      var(--color-surface-light),
+      var(--color-surface-dark)
+    );
     --schemes-surface: light-dark(oklch(98% 0.01 210), oklch(10% 0.01 210));
     --schemes-on-background: light-dark(#171d1e, #dee3e5);
     --schemes-on-background: light-dark(
@@ -193,14 +309,23 @@ html {
       oklch(90% 0.01 210)
     );
     --schemes-on-surface: light-dark(var(--color-black), var(--color-white));
-    --schemes-on-surface: light-dark(var(--color-black-oklch), var(--color-white-oklch));
+    --schemes-on-surface: light-dark(
+      var(--color-black-oklch),
+      var(--color-white-oklch)
+    );
     --schemes-surface-variant: light-dark(#dbe4e6, #3f484a);
     --schemes-surface-variant: light-dark(
       oklch(90% 0.02 210),
       oklch(30% 0.02 210)
     );
-    --schemes-on-surface-variant: light-dark(var(--color-black), var(--color-white));
-    --schemes-on-surface-variant: light-dark(var(--color-black-oklch), var(--color-white-oklch));
+    --schemes-on-surface-variant: light-dark(
+      var(--color-black),
+      var(--color-white)
+    );
+    --schemes-on-surface-variant: light-dark(
+      var(--color-black-oklch),
+      var(--color-white-oklch)
+    );
     --schemes-outline: light-dark(#252e30, #e8f2f4);
     --schemes-outline: light-dark(oklch(15% 0.01 210), oklch(95% 0.01 210));
     --schemes-outline-variant: light-dark(#424b4d, #bbc4c6);
@@ -209,7 +334,10 @@ html {
       oklch(80% 0.01 210)
     );
     --schemes-shadow: light-dark(var(--color-black), var(--color-black));
-    --schemes-shadow: light-dark(var(--color-black-oklch), var(--color-black-oklch));
+    --schemes-shadow: light-dark(
+      var(--color-black-oklch),
+      var(--color-black-oklch)
+    );
     --schemes-scrim: light-dark(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     --schemes-scrim: light-dark(
       color-mix(in oklab, black 70%, white 30%),
@@ -233,7 +361,10 @@ html {
       oklch(82% 0.08 190)
     );
     --schemes-on-primary: light-dark(var(--color-white), #00363b);
-    --schemes-on-primary: light-dark(var(--color-white-oklch), oklch(21% 0.05 190));
+    --schemes-on-primary: light-dark(
+      var(--color-white-oklch),
+      oklch(21% 0.05 190)
+    );
     --schemes-primary-container: light-dark(#6ff7f6, #005156);
     --schemes-primary-container: light-dark(
       oklch(90% 0.08 180),
@@ -247,7 +378,10 @@ html {
     --schemes-secondary: light-dark(#4a6363, #b0cccc);
     --schemes-secondary: light-dark(oklch(45% 0.03 180), oklch(80% 0.03 190));
     --schemes-on-secondary: light-dark(var(--color-white), #1b3535);
-    --schemes-on-secondary: light-dark(var(--color-white-oklch), oklch(20% 0.03 190));
+    --schemes-on-secondary: light-dark(
+      var(--color-white-oklch),
+      oklch(20% 0.03 190)
+    );
     --schemes-secondary-container: light-dark(#cce8e7, #324b4b);
     --schemes-secondary-container: light-dark(
       oklch(90% 0.03 180),
@@ -261,7 +395,10 @@ html {
     --schemes-tertiary: light-dark(#4a636d, #b1cad6);
     --schemes-tertiary: light-dark(oklch(45% 0.05 250), oklch(80% 0.05 250));
     --schemes-on-tertiary: light-dark(var(--color-white), #1c333b);
-    --schemes-on-tertiary: light-dark(var(--color-white-oklch), oklch(20% 0.05 250));
+    --schemes-on-tertiary: light-dark(
+      var(--color-white-oklch),
+      oklch(20% 0.05 250)
+    );
     --schemes-tertiary-container: light-dark(#cde6f3, #334954);
     --schemes-tertiary-container: light-dark(
       oklch(90% 0.05 250),
@@ -272,29 +409,22 @@ html {
       oklch(10% 0.01 250),
       oklch(90% 0.05 250)
     );
-    --schemes-error: light-dark(#ba1a1a, #ffb4ab);
-    --schemes-error: light-dark(oklch(50% 0.18 29), oklch(90% 0.08 29));
-    --schemes-on-error: light-dark(var(--color-white), #690005);
-    --schemes-on-error: light-dark(var(--color-white-oklch), oklch(21% 0.13 29));
-    --schemes-error-container: light-dark(#ffdad6, #93000a);
-    --schemes-error-container: light-dark(
-      oklch(91% 0.04 29),
-      oklch(32% 0.17 29)
+    /* Removed error color overrides; now inherited from :root for DRYness and consistency */
+    --schemes-background: light-dark(
+      var(--color-surface-light),
+      var(--color-surface-dark)
     );
-    --schemes-on-error-container: light-dark(#410002, #ffdad6);
-    --schemes-on-error-container: light-dark(
-      oklch(10% 0.01 29),
-      oklch(91% 0.04 29)
-    );
-    --schemes-background: light-dark(var(--color-surface-light), var(--color-surface-dark));
     --schemes-background: light-dark(oklch(98% 0.01 180), oklch(12% 0.01 190));
+    --schemes-surface: light-dark(
+      var(--color-surface-light),
+      var(--color-surface-dark)
+    );
+    --schemes-surface: light-dark(oklch(98% 0.01 180), oklch(12% 0.01 190));
     --schemes-on-background: light-dark(#191c1d, #e0e3e3);
     --schemes-on-background: light-dark(
       oklch(12% 0.01 180),
       oklch(88% 0.01 190)
     );
-    --schemes-surface: light-dark(var(--color-surface-light), var(--color-surface-dark));
-    --schemes-surface: light-dark(oklch(98% 0.01 180), oklch(12% 0.01 190));
     --schemes-on-surface: light-dark(#191c1d, #e0e3e3);
     --schemes-on-surface: light-dark(oklch(12% 0.01 180), oklch(88% 0.01 190));
     --schemes-surface-variant: light-dark(#dae5e3, #3f4948);
@@ -342,7 +472,10 @@ html {
     oklch(30% 0.03 300)
   );
   --schemes-on-primary: light-dark(var(--color-white), #381e72);
-  --schemes-on-primary: light-dark(var(--color-white-oklch), oklch(20% 0.08 300));
+  --schemes-on-primary: light-dark(
+    var(--color-white-oklch),
+    oklch(20% 0.08 300)
+  );
   --schemes-on-primary-container: light-dark(#4f378b, #eaddff);
   --schemes-on-primary-container: light-dark(
     oklch(30% 0.08 300),
@@ -363,13 +496,25 @@ html {
 @media (prefers-contrast: more) {
   .akvarell {
     /* Use only aliases and override only what differs */
-    --schemes-on-surface-variant: light-dark(var(--color-black), var(--color-white));
+    --schemes-on-surface-variant: light-dark(
+      var(--color-black),
+      var(--color-white)
+    );
     --schemes-on-surface: light-dark(var(--color-black), var(--color-white));
-    --schemes-outline-variant: light-dark(var(--color-black), var(--color-white));
+    --schemes-outline-variant: light-dark(
+      var(--color-black),
+      var(--color-white)
+    );
     --schemes-on-primary: light-dark(var(--color-white), var(--color-black));
-    --schemes-on-primary-container: light-dark(var(--color-black), var(--color-white));
+    --schemes-on-primary-container: light-dark(
+      var(--color-black),
+      var(--color-white)
+    );
     --schemes-primary: light-dark(var(--color-black), var(--color-white));
-    --schemes-primary-container: light-dark(var(--color-white), var(--color-black));
+    --schemes-primary-container: light-dark(
+      var(--color-white),
+      var(--color-black)
+    );
     --schemes-surface: light-dark(var(--color-white), var(--color-black));
     --schemes-background: light-dark(var(--color-white), var(--color-black));
   }
@@ -390,7 +535,10 @@ html {
       oklch(40% 0.03 300)
     );
     --schemes-on-primary: light-dark(var(--color-white), #222c2f);
-    --schemes-on-primary: light-dark(var(--color-white-oklch), oklch(15% 0.08 300));
+    --schemes-on-primary: light-dark(
+      var(--color-white-oklch),
+      oklch(15% 0.08 300)
+    );
     --schemes-on-primary-container: light-dark(#2a4a52, #e0f7fa);
     --schemes-on-primary-container: light-dark(
       oklch(25% 0.08 300),
@@ -423,7 +571,10 @@ html {
   --schemes-outline-variant: light-dark(#cbc6b5, #4a473a);
   --schemes-outline-variant: light-dark(oklch(80% 0.03 90), oklch(30% 0.03 90));
   --schemes-on-primary: light-dark(var(--color-white), #363100);
-  --schemes-on-primary: light-dark(var(--color-white-oklch), oklch(20% 0.08 90));
+  --schemes-on-primary: light-dark(
+    var(--color-white-oklch),
+    oklch(20% 0.08 90)
+  );
   --schemes-on-primary-container: light-dark(#4f4800, #f1e48a);
   --schemes-on-primary-container: light-dark(
     oklch(30% 0.08 90),
@@ -444,13 +595,25 @@ html {
 @media (prefers-contrast: more) {
   .mosaikk {
     /* Use only aliases and override only what differs */
-    --schemes-on-surface-variant: light-dark(var(--color-black), var(--color-white));
+    --schemes-on-surface-variant: light-dark(
+      var(--color-black),
+      var(--color-white)
+    );
     --schemes-on-surface: light-dark(var(--color-black), var(--color-white));
-    --schemes-outline-variant: light-dark(var(--color-black), var(--color-white));
+    --schemes-outline-variant: light-dark(
+      var(--color-black),
+      var(--color-white)
+    );
     --schemes-on-primary: light-dark(var(--color-white), var(--color-black));
-    --schemes-on-primary-container: light-dark(var(--color-black), var(--color-white));
+    --schemes-on-primary-container: light-dark(
+      var(--color-black),
+      var(--color-white)
+    );
     --schemes-primary: light-dark(var(--color-black), var(--color-white));
-    --schemes-primary-container: light-dark(var(--color-white), var(--color-black));
+    --schemes-primary-container: light-dark(
+      var(--color-white),
+      var(--color-black)
+    );
     --schemes-surface: light-dark(var(--color-white), var(--color-black));
     --schemes-background: light-dark(var(--color-white), var(--color-black));
   }
@@ -471,7 +634,10 @@ html {
       oklch(40% 0.03 90)
     );
     --schemes-on-primary: light-dark(var(--color-white), #222c2f);
-    --schemes-on-primary: light-dark(var(--color-white-oklch), oklch(15% 0.08 90));
+    --schemes-on-primary: light-dark(
+      var(--color-white-oklch),
+      oklch(15% 0.08 90)
+    );
     --schemes-on-primary-container: light-dark(#2a4a52, #e0f7fa);
     --schemes-on-primary-container: light-dark(
       oklch(25% 0.08 90),
@@ -493,7 +659,6 @@ html {
 
 /* Lerret Theme */
 .lerret {
-  /* Only override variables that differ from :root, use aliases where possible */
   --schemes-primary: light-dark(#006877, #83d2e4);
   --schemes-primary: light-dark(oklch(47.5% 0.08 213), oklch(82% 0.08 213));
   --schemes-surface-tint: light-dark(#006877, #83d2e4);
@@ -502,84 +667,76 @@ html {
     oklch(82% 0.08 213)
   );
   --schemes-on-primary: light-dark(var(--color-white), #00363f);
-  --schemes-on-primary: light-dark(var(--color-white-oklch), oklch(30.6% 0.053 212.5));
+  --schemes-on-primary: light-dark(
+    var(--color-white-oklch),
+    oklch(30.6% 0.053 213)
+  );
   --schemes-primary-container: light-dark(#a4eeff, #004e5a);
   --schemes-primary-container: light-dark(
-    oklch(90.6% 0.076 213.6),
-    oklch(38.9% 0.068 212.3)
+    oklch(90.6% 0.076 213),
+    oklch(38.9% 0.068 213)
   );
   --schemes-on-primary-container: light-dark(#004e5a, #a4eeff);
   --schemes-on-primary-container: light-dark(
-    oklch(38.9% 0.068 212.3),
-    oklch(90.6% 0.076 213.6)
+    oklch(38.9% 0.068 213),
+    oklch(90.6% 0.076 213)
   );
   --schemes-secondary: light-dark(#4b6268, #b2cbd1);
-  --schemes-secondary: light-dark(
-    oklch(48% 0.029 215.5),
-    oklch(82.5% 0.028 213.8)
-  );
+  --schemes-secondary: light-dark(oklch(48% 0.029 213), oklch(82.5% 0.028 213));
   --schemes-on-secondary: light-dark(var(--color-white), #1c3439);
-  --schemes-on-secondary: light-dark(var(--color-white-oklch), oklch(30.8% 0.031 212.4));
+  --schemes-on-secondary: light-dark(
+    var(--color-white-oklch),
+    oklch(30.8% 0.031 213)
+  );
   --schemes-secondary-container: light-dark(#cde7ee, #334a50);
   --schemes-secondary-container: light-dark(
-    oklch(91.1% 0.029 215.7),
-    oklch(39.3% 0.03 215.7)
+    oklch(91.1% 0.029 213),
+    oklch(39.3% 0.03 213)
   );
   --schemes-on-secondary-container: light-dark(#334a50, #cde7ee);
   --schemes-on-secondary-container: light-dark(
-    oklch(39.3% 0.03 215.7),
-    oklch(91.1% 0.029 215.7)
+    oklch(39.3% 0.03 213),
+    oklch(91.1% 0.029 213)
   );
   --schemes-tertiary: light-dark(#555d7e, #bdc5eb);
-  --schemes-tertiary: light-dark(
-    oklch(48.5% 0.054 273.7),
-    oklch(83% 0.054 275.8)
-  );
+  --schemes-tertiary: light-dark(oklch(48.5% 0.054 213), oklch(83% 0.054 213));
   --schemes-on-tertiary: light-dark(var(--color-white), #262f4d);
-  --schemes-on-tertiary: light-dark(var(--color-white-oklch), oklch(31.2% 0.055 270.3));
+  --schemes-on-tertiary: light-dark(
+    var(--color-white-oklch),
+    oklch(31.2% 0.055 213)
+  );
   --schemes-tertiary-container: light-dark(#dce1ff, #3d4565);
   --schemes-tertiary-container: light-dark(
-    oklch(91.5% 0.041 278.1),
-    oklch(39.8% 0.056 272.9)
+    oklch(91.5% 0.041 213),
+    oklch(39.8% 0.056 213)
   );
   --schemes-on-tertiary-container: light-dark(#3d4565, #dce1ff);
   --schemes-on-tertiary-container: light-dark(
-    oklch(39.8% 0.056 272.9),
-    oklch(91.5% 0.041 278.1)
+    oklch(39.8% 0.056 213),
+    oklch(91.5% 0.041 213)
   );
-  --schemes-error: light-dark(#ba1a1a, #ffb4ab);
-  --schemes-error: light-dark(oklch(50.6% 0.192 27.7), oklch(83.8% 0.089 26.8));
-  --schemes-on-error: light-dark(var(--color-white), #690005);
-  --schemes-on-error: light-dark(var(--color-white-oklch), oklch(32.8% 0.134 27.3));
-  --schemes-error-container: light-dark(#ffdad6, #93000a);
-  --schemes-error-container: light-dark(
-    oklch(91.8% 0.042 25.2),
-    oklch(41.7% 0.17 27.4)
-  );
-  --schemes-on-error-container: light-dark(#93000a, #ffdada);
-  --schemes-on-error-container: light-dark(
-    oklch(41.7% 0.17 27.4),
-    oklch(91.8% 0.042 25.2)
-  );
-  --schemes-background: light-dark(var(--color-surface-light), var(--color-surface-dark));
   --schemes-background: light-dark(
-    oklch(98.5% 0.01 223.5),
-    oklch(18.6% 0.01 220)
+    var(--color-surface-light),
+    var(--color-surface-dark)
   );
-  --schemes-surface: light-dark(var(--color-surface-light), var(--color-surface-dark));
+  --schemes-background: light-dark(
+    oklch(98.5% 0.01 213),
+    oklch(18.6% 0.01 213)
+  );
   --schemes-surface: light-dark(
-    oklch(98.2% 0.01 223.5),
-    oklch(18.6% 0.01 220.1)
+    var(--color-surface-light),
+    var(--color-surface-dark)
   );
+  --schemes-surface: light-dark(oklch(98.2% 0.01 213), oklch(18.6% 0.01 213));
   --schemes-on-background: light-dark(#171d1e, #dee3e5);
   --schemes-on-background: light-dark(
-    oklch(22.5% 0.01 208.8),
-    oklch(91.3% 0.01 223.5)
+    oklch(22.5% 0.01 213),
+    oklch(91.3% 0.01 213)
   );
   --schemes-on-surface: light-dark(#171d1e, #dee3e5);
   --schemes-on-surface: light-dark(
-    oklch(22.5% 0.01 208.8),
-    oklch(91.3% 0.01 223.5)
+    oklch(22.5% 0.01 213),
+    oklch(91.3% 0.01 213)
   );
 }
 @media (prefers-contrast: more) {
@@ -588,8 +745,14 @@ html {
     --schemes-primary: light-dark(var(--color-black), var(--color-white));
     --schemes-surface-tint: light-dark(var(--color-black), var(--color-white));
     --schemes-on-primary: light-dark(var(--color-white), var(--color-black));
-    --schemes-primary-container: light-dark(var(--color-white), var(--color-black));
-    --schemes-on-primary-container: light-dark(var(--color-black), var(--color-white));
+    --schemes-primary-container: light-dark(
+      var(--color-white),
+      var(--color-black)
+    );
+    --schemes-on-primary-container: light-dark(
+      var(--color-black),
+      var(--color-white)
+    );
     --schemes-secondary: light-dark(#222, #eee);
     --schemes-on-secondary: light-dark(#fff, #000);
     --schemes-secondary-container: light-dark(#fff, #000);
@@ -606,12 +769,21 @@ html {
     --schemes-surface: light-dark(#fff, #000);
     --schemes-on-background: light-dark(#000, #dee3e5);
     --schemes-surface-variant: light-dark(#e0e0e0, #222);
-    --schemes-on-surface-variant: light-dark(var(--color-black), var(--color-white));
+    --schemes-on-surface-variant: light-dark(
+      var(--color-black),
+      var(--color-white)
+    );
     --schemes-outline: light-dark(var(--color-black), var(--color-white));
-    --schemes-outline-variant: light-dark(var(--color-black), var(--color-white));
+    --schemes-outline-variant: light-dark(
+      var(--color-black),
+      var(--color-white)
+    );
     --schemes-shadow: light-dark(var(--color-black), var(--color-white));
     --schemes-scrim: light-dark(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
-    --schemes-surface-container: light-dark(var(--color-white), var(--color-black));
+    --schemes-surface-container: light-dark(
+      var(--color-white),
+      var(--color-black)
+    );
     --schemes-on-surface: light-dark(var(--color-black), var(--color-white));
   }
 }
@@ -640,7 +812,10 @@ html {
     --schemes-secondary: light-dark(#7a8c91, #cfd8dc);
     --schemes-secondary: light-dark(oklch(65% 0.03 213), oklch(85% 0.03 213));
     --schemes-on-secondary: light-dark(#f5f5f5, #263238);
-    --schemes-on-secondary: light-dark(var(--color-white-oklch), oklch(20% 0.03 213));
+    --schemes-on-secondary: light-dark(
+      var(--color-white-oklch),
+      oklch(20% 0.03 213)
+    );
     --schemes-secondary-container: light-dark(#e3f2fd, #455a64);
     --schemes-secondary-container: light-dark(
       oklch(95% 0.03 213),
@@ -654,7 +829,10 @@ html {
     --schemes-tertiary: light-dark(#7e86a1, #cfd8dc);
     --schemes-tertiary: light-dark(oklch(65% 0.05 273), oklch(85% 0.05 273));
     --schemes-on-tertiary: light-dark(#f5f5f5, #263238);
-    --schemes-on-tertiary: light-dark(var(--color-white-oklch), oklch(20% 0.05 273));
+    --schemes-on-tertiary: light-dark(
+      var(--color-white-oklch),
+      oklch(20% 0.05 273)
+    );
     --schemes-tertiary-container: light-dark(#e3e7fa, #3a425a);
     --schemes-tertiary-container: light-dark(
       oklch(95% 0.05 273),
@@ -679,9 +857,15 @@ html {
       oklch(70% 0.12 27),
       oklch(98% 0.04 27)
     );
-    --schemes-background: light-dark(var(--color-surface-light), var(--color-surface-dark));
+    --schemes-background: light-dark(
+      var(--color-surface-light),
+      var(--color-surface-dark)
+    );
     --schemes-background: light-dark(oklch(98% 0.01 213), oklch(12% 0.01 213));
-    --schemes-surface: light-dark(var(--color-surface-light), var(--color-surface-dark));
+    --schemes-surface: light-dark(
+      var(--color-surface-light),
+      var(--color-surface-dark)
+    );
     --schemes-surface: light-dark(oklch(98% 0.01 213), oklch(12% 0.01 213));
     --schemes-on-background: light-dark(#232b2d, #e0e6e8);
     --schemes-on-background: light-dark(
