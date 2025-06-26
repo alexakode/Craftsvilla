@@ -74,48 +74,54 @@ html {
   /* Base color values (hex and oklch) */
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-white-oklch: oklch(100% 0 0);
-  --color-black-oklch: oklch(0% 0 0);
+  --color-white-oklch: oklch(var(--l-100) var(--c-00) 0);
+  --color-black-oklch: oklch(var(--l-0) var(--c-00) 0);
   --color-surface-light: #f5fafc;
   --color-surface-dark: #0e1416;
-  --color-surface-light-oklch: oklch(98.5% 0.01 213);
-  --color-surface-dark-oklch: oklch(18.6% 0.01 213);
+  --color-surface-light-oklch: oklch(var(--l-98) var(--c-01) 213);
+  --color-surface-dark-oklch: oklch(var(--l-18) var(--c-01) 213);
   /* ...add more base colors as needed... */
 
   /* Default (Material) color scheme using static hex values and oklch, all hue 213 */
   --schemes-primary: light-dark(#006877, #83d2e4);
-  --schemes-primary: light-dark(oklch(47.5% 0.08 213), oklch(82% 0.08 213));
+  --schemes-primary: light-dark(
+    oklch(var(--l-48) var(--c-08) 213),
+    oklch(var(--l-82) var(--c-08) 213)
+  );
   --schemes-on-primary: light-dark(var(--color-white), #00363f);
   --schemes-on-primary: light-dark(
     var(--color-white-oklch),
-    oklch(30.6% 0.053 213)
+    oklch(var(--l-32) var(--c-05) 213)
   );
   --schemes-primary-container: light-dark(#a4eeff, #004e5a);
   --schemes-primary-container: light-dark(
-    oklch(90.6% 0.076 213),
-    oklch(38.9% 0.068 213)
+    oklch(var(--l-90) var(--c-08) 213),
+    oklch(var(--l-40) var(--c-06) 213)
   );
   --schemes-on-primary-container: light-dark(#004e5a, #a4eeff);
   --schemes-on-primary-container: light-dark(
-    oklch(38.9% 0.068 213),
-    oklch(90.6% 0.076 213)
+    oklch(var(--l-40) var(--c-06) 213),
+    oklch(var(--l-90) var(--c-08) 213)
   );
   --schemes-secondary: light-dark(#4b6268, #b2cbd1);
-  --schemes-secondary: light-dark(oklch(48% 0.029 213), oklch(82.5% 0.028 213));
+  --schemes-secondary: light-dark(
+    oklch(var(--l-48) var(--c-03) 213),
+    oklch(var(--l-82) var(--c-03) 213)
+  );
   --schemes-on-secondary: light-dark(var(--color-white), #1c3439);
   --schemes-on-secondary: light-dark(
     var(--color-white-oklch),
-    oklch(30.8% 0.031 213)
+    oklch(var(--l-30) var(--c-03) 213)
   );
   --schemes-secondary-container: light-dark(#cde7ee, #334a50);
   --schemes-secondary-container: light-dark(
-    oklch(91.1% 0.029 213),
-    oklch(39.3% 0.03 213)
+    oklch(var(--l-92) var(--c-03) 213),
+    oklch(var(--l-40) var(--c-03) 213)
   );
   --schemes-on-secondary-container: light-dark(#334a50, #cde7ee);
   --schemes-on-secondary-container: light-dark(
-    oklch(39.3% 0.03 213),
-    oklch(91.1% 0.029 213)
+    oklch(var(--l-40) var(--c-03) 213),
+    oklch(var(--l-92) var(--c-03) 213)
   );
   --schemes-tertiary: light-dark(#555d7e, #bdc5eb);
   --schemes-tertiary: light-dark(oklch(48.5% 0.054 213), oklch(83% 0.054 213));
