@@ -90,7 +90,7 @@ html {
 
   /* ...repeat for other color roles using the scale... */
   color-scheme: light dark;
-  /* Base color values (hex and oklch) */
+  /* Base color values (hex and oklch, use oklch and adapt values) */
   --color-white: #ffffff;
   --color-black: #000000;
   --color-white-oklch: oklch(var(--l-100) var(--c-00) 0);
