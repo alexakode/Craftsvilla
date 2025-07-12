@@ -6,27 +6,18 @@ html {
 *::after {
   box-sizing: inherit;
 }
-/* 
+
 :root {
-  --C-scale: 1; /* Standard multiplikator * Forslag til implementering av sterkere farger/
-  /* --base-C: 0.15;
+  --C-scale: 1; /* Standard multiplikator * Forslag til implementering av sterkere farger*/
+  --base-C: 0.15;
   --base-L: 65%;
   --base-H: 200;
 
-  --accent: oklch(var(--base-L) calc(var(--base-C) * var(--C-scale)) var(--base-H));
+  --accent: oklch(
+    var(--base-L) calc(var(--base-C) * var(--C-scale)) var(--base-H)
+  );
 }
 
-/* For moderne skjermer med bredt fargespekter */
-/* @media (color-gamut: p3) {
-  :root {
-    --C-scale: 1.4;
-  }
-}
-
-@media (color-gamut: rec2020) {
-  :root {
-    --C-scale: 1.6; */
-/* } */
 /* =============================
   COLOR SCHEME DECLARATIONS (Optimized with Aliases, Consistent Hue 213)
   =============================
@@ -94,19 +85,20 @@ html {
   /* End alphabetical lightness scale */
 
   /* Chroma scale (normal distribution: more values in mid-range) */
-  --c-00: 0;
-  --c-01: 0.01;
-  --c-02: 0.02;
-  --c-03: 0.03;
-  --c-04: 0.04;
-  --c-05: 0.05;
-  --c-06: 0.06;
-  --c-08: 0.08;
-  --c-10: 0.1;
-  --c-12: 0.12;
-  --c-15: 0.15;
-  --c-17: 0.17;
-  --c-19: 0.19;
+  --c-scale: 1;
+  --c-00: calc(0 * var(--c-scale));
+  --c-01: calc(0.01 * var(--c-scale));
+  --c-02: calc(0.02 * var(--c-scale));
+  --c-03: calc(0.03 * var(--c-scale));
+  --c-04: calc(0.04 * var(--c-scale));
+  --c-05: calc(0.05 * var(--c-scale));
+  --c-06: calc(0.06 * var(--c-scale));
+  --c-08: calc(0.08 * var(--c-scale));
+  --c-10: calc(0.1 * var(--c-scale));
+  --c-12: calc(0.12 * var(--c-scale));
+  --c-15: calc(0.15 * var(--c-scale));
+  --c-17: calc(0.17 * var(--c-scale));
+  --c-19: calc(0.19 * var(--c-scale));
 
   /* ...repeat for other color roles using the scale... */
   color-scheme: light dark;
@@ -260,7 +252,17 @@ html {
   --schemes-surface-tint: #003c46;
   --schemes-surface-tint: oklch(var(--l-25) var(--c-08) 213);
 }
+@media (color-gamut: p3) {
+  :root {
+    --c-scale: 1.3; /* Øker intensiteten for bedre skjermer */
+  }
+}
 
+@media (color-gamut: rec2020) {
+  :root {
+    --c-scale: 1.5; /* Enda rikere farger for HDR-opplevelse */
+  }
+}
 /* Lerret Theme (identical to :root, for future flexibility) */
 .lerret {
   --schemes-primary: light-dark(
